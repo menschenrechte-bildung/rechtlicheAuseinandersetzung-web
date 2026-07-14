@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECHR Application: Martin & Lucas Heinrich v. Germany</title>
+    <meta name="description" content="Documentation of the human rights complaint to the ECHR challenging compulsory school attendance in Saxony without quality assurance.">
+    <link rel="alternate" type="text/markdown" title="LLM-friendly documentation" href="llms.txt">
+    <link rel="alternate" hreflang="de" href="index.html" />
+    <link rel="alternate" hreflang="en" href="index_en.html" />
+    <link rel="alternate" hreflang="x-default" href="index.html" />
+    <!-- Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-dark: #0b0f19;
+            --bg-card: #131b2e;
+            --bg-input: #1c2742;
+            --primary: #6366f1;
+            --primary-hover: #4f46e5;
+            --primary-glow: rgba(99, 102, 241, 0.2);
+            --accent: #a855f7;
+            --accent-glow: rgba(168, 85, 247, 0.2);
+            --success: #10b981;
+            --success-glow: rgba(16, 185, 129, 0.15);
+            --warning: #f59e0b;
+            --warning-glow: rgba(245, 158, 11, 0.15);
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --border: #233050;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-display: 'Outfit', sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.2s, border-color 0.2s;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 10% 15%, rgba(99, 102, 241, 0.07) 0%, transparent 40%),
+                radial-gradient(circle at 85% 75%, rgba(168, 85, 247, 0.07) 0%, transparent 45%);
+            background-attachment: fixed;
+            padding-bottom: 2rem;
+        }
+
+        /* Container Layout */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem 1.25rem;
+            position: relative;
+        }
+
+        /* Language Switcher */
+        .lang-selector-container {
+            position: absolute;
+            top: 2rem;
+            right: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(19, 27, 46, 0.7);
+            border: 1px solid var(--border);
+            border-radius: 9999px;
+            padding: 0.4rem 1rem;
+            backdrop-filter: blur(12px);
+            z-index: 100;
+        }
+
+        .lang-globe-icon {
+            color: var(--text-muted);
+            flex-shrink: 0;
+        }
+
+        .lang-select {
+            background: transparent;
+            border: none;
+            color: var(--text-main);
+            font-family: var(--font-display);
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            outline: none;
+            padding-right: 0.25rem;
+        }
+
+        .lang-select option {
+            background: var(--bg-card);
+            color: var(--text-main);
+        }
+
+        @media (max-width: 600px) {
+            .lang-selector-container {
+                position: relative;
+                top: 0;
+                right: 0;
+                margin: 0 auto 2rem auto;
+                width: fit-content;
+            }
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 3.5rem;
+            position: relative;
+            padding-top: 1.5rem;
+        }
+
+        .badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary-glow), var(--accent-glow));
+            border: 1px solid var(--primary);
+            color: #c7d2fe;
+            padding: 0.35rem 1.1rem;
+            border-radius: 9999px;
+            font-family: var(--font-display);
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1.25rem;
+            box-shadow: 0 0 20px var(--primary-glow);
+        }
+
+        h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2.2rem, 5.5vw, 3.4rem);
+            font-weight: 800;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #ffffff 40%, #c7d2fe 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            font-family: var(--font-display);
+            font-size: clamp(1.05rem, 2.5vw, 1.3rem);
+            color: var(--text-muted);
+            max-width: 750px;
+            margin: 0 auto;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        /* Navigation Tabs */
+        .tabs-container {
+            margin-bottom: 3rem;
+        }
+
+        .tabs-nav {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-bottom: 2.5rem;
+            background: rgba(19, 27, 46, 0.6);
+            padding: 0.35rem;
+            border-radius: 9999px;
+            border: 1px solid var(--border);
+            max-width: 680px;
+            margin-left: auto;
+            margin-right: auto;
+            backdrop-filter: blur(12px);
+        }
+
+        .tab-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+            padding: 0.7rem 1.4rem;
+            border-radius: 9999px;
+            font-family: var(--font-display);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 0.95rem;
+            flex: 1;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .tab-btn:hover {
+            color: var(--text-main);
+        }
+
+        .tab-btn.active {
+            background: var(--primary);
+            color: #ffffff;
+            box-shadow: 0 4px 15px var(--primary-glow);
+        }
+
+        @media (max-width: 480px) {
+            .tabs-nav {
+                flex-wrap: wrap;
+                border-radius: 16px;
+                padding: 0.5rem;
+            }
+            .tab-btn {
+                flex: 1 1 40%;
+                border-radius: 8px;
+                font-size: 0.85rem;
+                padding: 0.5rem;
+            }
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.4s ease-out forwards;
+        }
+
+        /* General Card Styling */
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 2.2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            opacity: 0.7;
+        }
+
+        /* Text styling inside cards */
+        .card h2 {
+            font-family: var(--font-display);
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #ffffff;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.75rem;
+        }
+
+        .card h3 {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: #e0e7ff;
+        }
+
+        .card p {
+            color: var(--text-main);
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-bottom: 1.25rem;
+        }
+
+        .card ul, .card ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+
+        .card li {
+            margin-bottom: 0.6rem;
+            font-size: 1rem;
+            line-height: 1.6;
+            color: var(--text-main);
+        }
+
+        /* Alerts in markdown rendering */
+        .alert {
+            background: rgba(99, 102, 241, 0.05);
+            border-left: 4px solid var(--primary);
+            border-radius: 8px;
+            padding: 1.25rem;
+            margin: 1.5rem 0;
+        }
+
+        .alert-warning {
+            border-left-color: var(--warning);
+            background: rgba(245, 158, 11, 0.03);
+        }
+        
+        .alert-important, .alert-caution {
+            border-left-color: var(--accent);
+            background: rgba(168, 85, 247, 0.03);
+        }
+
+        .alert p {
+            margin-bottom: 0;
+            font-size: 0.95rem;
+            color: #cbd5e1;
+        }
+
+        .divider {
+            border: 0;
+            height: 1px;
+            background: var(--border);
+            margin: 2.2rem 0;
+        }
+
+        /* Timeline Styles */
+        .timeline-container {
+            position: relative;
+            padding-left: 2.5rem;
+            margin-top: 2rem;
+        }
+
+        .timeline-container::before {
+            content: '';
+            position: absolute;
+            left: 11px;
+            top: 5px;
+            bottom: 5px;
+            width: 2px;
+            background: var(--border);
+        }
+
+        .timeline-node {
+            position: relative;
+            margin-bottom: 2.5rem;
+        }
+
+        .timeline-marker {
+            position: absolute;
+            left: -2.5rem;
+            top: 2px;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: var(--bg-dark);
+            border: 2px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            z-index: 2;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 0 4px var(--bg-dark);
+        }
+
+        .timeline-node.active .timeline-marker {
+            border-color: var(--primary);
+            color: #ffffff;
+            background: var(--primary);
+            box-shadow: 0 0 12px var(--primary-glow), 0 0 0 4px var(--bg-dark);
+        }
+        
+        .timeline-node.success-node .timeline-marker {
+            border-color: var(--success);
+            color: #ffffff;
+            background: var(--success);
+            box-shadow: 0 0 12px var(--success-glow), 0 0 0 4px var(--bg-dark);
+        }
+
+        .timeline-node.warning-node .timeline-marker {
+            border-color: var(--warning);
+            color: #ffffff;
+            background: var(--warning);
+            box-shadow: 0 0 12px var(--warning-glow), 0 0 0 4px var(--bg-dark);
+        }
+
+        .timeline-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 1.5rem;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .timeline-card:hover {
+            border-color: rgba(99, 102, 241, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .timeline-node.active .timeline-card {
+            border-color: var(--primary);
+            background: rgba(19, 27, 46, 0.85);
+        }
+
+        .timeline-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-card-title {
+            font-family: var(--font-display);
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .timeline-node.active .timeline-card-title {
+            color: #a5b4fc;
+        }
+
+        .timeline-card-toggle {
+            color: var(--text-muted);
+            transition: transform 0.2s ease;
+        }
+
+        .timeline-node.active .timeline-card-toggle {
+            transform: rotate(180deg);
+            color: var(--primary);
+        }
+
+        .timeline-card-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s cubic-bezier(0, 1, 0, 1), padding-top 0.3s ease;
+            padding-top: 0;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .timeline-node.active .timeline-card-body {
+            max-height: 5000px; /* high limit to fit content */
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+            margin-top: 0.75rem;
+            color: var(--text-main);
+        }
+
+        /* Timeline specific content styles */
+        .timeline-card-body p {
+            font-size: 0.95rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .timeline-card-body strong {
+            color: #ffffff;
+        }
+
+        /* Accordion Styles (Legal Arguments) */
+        .accordions-container {
+            margin-top: 2rem;
+        }
+
+        .accordion-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            transition: border-color 0.2s ease;
+        }
+
+        .accordion-item:hover {
+            border-color: rgba(99, 102, 241, 0.3);
+        }
+
+        .accordion-item.active {
+            border-color: var(--primary);
+        }
+
+        .accordion-trigger {
+            width: 100%;
+            background: transparent;
+            border: none;
+            padding: 1.25rem 1.5rem;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #ffffff;
+            outline: none;
+        }
+
+        .accordion-item.active .accordion-trigger {
+            color: #a5b4fc;
+            background: rgba(99, 102, 241, 0.03);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .accordion-icon {
+            color: var(--text-muted);
+            transition: transform 0.2s ease;
+            display: flex;
+            align-items: center;
+        }
+
+        .accordion-item.active .accordion-icon {
+            transform: rotate(180deg);
+            color: var(--primary);
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .accordion-inner {
+            padding: 1.5rem;
+            color: var(--text-main);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .accordion-inner p {
+            margin-bottom: 1rem;
+        }
+
+        .accordion-inner h4 {
+            font-family: var(--font-display);
+            color: #e0e7ff;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .dogmatic-section {
+            background: rgba(99, 102, 241, 0.03);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0 2.5rem 0;
+        }
+
+        .dogmatic-section h3 {
+            margin-top: 0 !important;
+            color: #a5b4fc !important;
+            font-weight: 700;
+        }
+
+        /* Document Items */
+        .docs-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .doc-item-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .doc-category {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--accent);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .doc-item-card h4 {
+            font-family: var(--font-display);
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+        }
+
+        .doc-item-card p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 1.25rem;
+            flex-grow: 1;
+            line-height: 1.5;
+        }
+
+        .doc-actions {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .doc-btn {
+            background: var(--primary);
+            border: none;
+            color: #ffffff;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            text-align: center;
+            flex: 1;
+            transition: all 0.2s ease;
+        }
+
+        .doc-btn:hover {
+            background: var(--primary-hover);
+        }
+
+        .doc-btn.secondary {
+            background: var(--bg-input);
+            border: 1px solid var(--border);
+            color: var(--text-main);
+        }
+
+        .doc-btn.secondary:hover {
+            background: rgba(99, 102, 241, 0.1);
+            border-color: var(--primary);
+        }
+
+        /* Giscus Container */
+        .comments-section {
+            margin-top: 4.5rem;
+            border-top: 1px solid var(--border);
+            padding-top: 3rem;
+        }
+
+        .comments-title {
+            font-family: var(--font-display);
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 3rem 0 1rem 0;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-top: 4rem;
+        }
+
+        footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(12px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+    <script>
+        const CURRENT_LANG = "en";
+
+        function redirectToLang(lang) {
+            localStorage.setItem("lang_pref", lang);
+            const targetFile = lang === "de" ? "index.html" : `index_${lang}.html`;
+            
+            const currentPath = window.location.pathname;
+            const pathParts = currentPath.split('/');
+            pathParts[pathParts.length - 1] = targetFile;
+            const newPath = pathParts.join('/');
+            
+            window.location.href = window.location.origin + newPath + window.location.search;
+        }
+
+        // Initialize Lang Selector on load
+        window.addEventListener('DOMContentLoaded', () => {
+            const select = document.getElementById('langSelect');
+            if (select) {
+                select.value = CURRENT_LANG;
+            }
+            
+            // Build timeline items
+            renderTimeline();
+        });
+
+        function switchTab(event, tabId) {
+            // Deactivate all tabs
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+            
+            // Activate selected
+            document.getElementById(tabId).classList.add('active');
+            if (event) {
+                event.currentTarget.classList.add('active');
+            }
+            
+            // Re-render timeline if it was opened
+            if (tabId === 'facts-tab') {
+                // Focus scroll
+            }
+        }
+
+        // Toggle Legal Accordion
+        function toggleAccordion(itemId) {
+            const item = document.getElementById(itemId);
+            const content = item.querySelector('.accordion-content');
+            const isActive = item.classList.contains('active');
+            
+            // Close all
+            document.querySelectorAll('.accordion-item').forEach(el => {
+                el.classList.remove('active');
+                el.querySelector('.accordion-content').style.maxHeight = null;
+            });
+            
+            // Toggle clicked
+            if (!isActive) {
+                item.classList.add('active');
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        }
+
+        // Timeline toggle logic
+        function toggleTimelineNode(nodeId) {
+            const node = document.getElementById('timeline-node-' + nodeId);
+            const body = node.querySelector('.timeline-card-body');
+            const isActive = node.classList.contains('active');
+            
+            // Toggle class
+            if (isActive) {
+                node.classList.remove('active');
+            } else {
+                node.classList.add('active');
+            }
+        }
+
+        // Facts Data rendered dynamically
+        const timelineData = [
+        {
+                "id": "A",
+                "title": "Background and Incidents at the Public School",
+                "content": "<ol>\n<li>The applicant, Martin Heinrich, is the single father of Lucas Heinrich (born 2009). They reside in Dresden. Lucas attended the public 25th Secondary School (<em>Oberschule</em>) in Dresden until December 2023.</li>\n<li>During his primary school education (second grade), Lucas experienced pedagogical abuse when a teacher publicly emptied his schoolbag in front of the entire class to confiscate a mobile phone (see <strong>Annex 6, p. 16</strong>). The applicant’s complaint to the primary school's headmistress remained ineffective. Later, during the 2022/2023 school year at the 25th Secondary School, Lucas’s academic performance collapsed to a Grade Point Average (GPA) of 3.91, resulting in severe school anxiety and a forced transfer to the lower-tier <em>Hauptschulbildungsgang</em> (see <strong>Annex 2, p. 3</strong> and <strong>Annex 4, p. 10</strong>).</li>\n<li>In the autumn and winter of 2023 (Class 8b), further incidents occurred. During a biology test, Lucas was prohibited from using the restroom (see <strong>Annex 6, p. 17</strong>). In January 2023, during a freezing period, the school heating was turned down. Lucas was ordered to remove his jacket in the classroom. Upon refusal due to physical discomfort, he was excluded from the lesson and forced to sit in the cold hallway (see <strong>Annex 6, p. 17</strong>).</li>\n<li>Following these incidents, the applicant advised his son to study at home. Lucas autonomously decided to stop entering the school building on 18.12.2023 (see <strong>Annex 4, p. 10</strong>). The applicant did not physically block his son from school and would have provided all necessary resources had Lucas chosen to attend.</li>\n</ol>"
+        },
+        {
+                "id": "B",
+                "title": "Petitions to the School Supervisory Authorities",
+                "content": "<ol>\n<li>On 25.02.2023, the applicant petitioned the State Office for School and Education (LASUB) to investigate the school's implementation of statutory educational goals under § 1 SächsSchulG. On 27.02.2023, Gotthard Dorzok, Head of the Legal Unit at LASUB, rejected the request, declaring § 1 SächsSchulG to be a non-binding \"programmatic principle\" (<em>Programmsatz</em>) (see <strong>Annex 1, p. 1-2</strong>).</li>\n<li>In June and August 2023, the applicant contacted the Saxon State Ministry of Education (SMK) to report child welfare hazards and complain about the lack of oversight. On 19.09.2023, Dr. Martina Marx (SMK) dismissively rejected the complaints, stating the queries had already been answered (see <strong>Annex 3, p. 8-9</strong>). The responsible case officer at LASUB, Ms. Heuer, verbally advised the applicant to enroll his child in a private school (see <strong>Annex 3, p. 7-8</strong>).</li>\n</ol>"
+        },
+        {
+                "id": "C",
+                "title": "Private Educational Measures and Academic Outcomes",
+                "content": "<ol>\n<li>The applicant applied for Lucas’s admission at several private alternative schools (e.g., Montessori and the Dresden University School). All applications were rejected due to capacity exhaustion, with regional waiting lists exceeding 600 applicants (see <strong>Annex 14, p. 79-80</strong>). The Free State of Saxony provided no placement system for private schools.</li>\n<li>Lucas subsequently studied autodidactically at home under the applicant’s guidance.</li>\n<li>On 26.06.2026, Lucas successfully passed the official state examination for external candidates (<em>Schulfremdenprüfung</em>) at the 46th Secondary School Dresden. He obtained his middle-school graduation certificate (<em>Realschulabschluss</em>) with a GPA of 2.71, including the grade \"1\" (excellent) in social studies/law and \"2\" (good) in physics and chemistry (see <strong>Annex 24, p. 120-122</strong>).</li>\n<li>In the summer of 2026, Lucas successfully passed the physical and psychological selection tests and enlisted for Voluntary Military Service (<em>Freiwilliger Wehrdienst</em>) in the German Federal Armed Forces (<em>Bundeswehr</em>), scheduled to commence in September 2026.</li>\n</ol>"
+        },
+        {
+                "id": "D",
+                "title": "Administrative Sanctions and Domestic Court Proceedings",
+                "content": "<ol>\n<li>On 01.08.2024, the City of Dresden issued an administrative fine notice of EUR 500 against the applicant for violating compulsory school attendance under § 31 SächsSchulG (see <strong>Annex 5, p. 11-12</strong>).</li>\n<li>The applicant filed an objection. On 14.05.2025, the Local Court (<em>Amtsgericht</em>) Dresden convicted the applicant (case no. 219 OWi 306 Js 48568/24) (see <strong>Annex 6, p. 13-21</strong>). The court found the applicant’s description of the school abuses credible, but declared them \"legally irrelevant\" to the school attendance obligation. The court also treated the applicant’s advice to his son as evidence of intent. Throughout the trial, the court refused to hear Lucas (who was 15 years old) as a witness or to allow him to express his views.</li>\n<li>The applicant appealed. On 04.12.2025, the Higher Regional Court (<em>Oberlandesgericht</em>) Dresden rejected the appeal (case no. E ORbs 25 SsBs 469/25), stating in a single sentence that the applicant had failed to take Article 7 GG (state school supervision) into account (see <strong>Annex 11, p. 39-40</strong>). The General Prosecutor's Office (<em>GStA</em>) Dresden had explicitly stated in its written submission that the minor’s perspective was \"not decisive\" for the enforcement of school attendance (see <strong>Annex 9, p. 34</strong>). The OLG likewise refused to hear the child (who was then 16 years old).</li>\n<li>At the end of the 2023/2024 school year, despite Lucas having 96 unexcused absences and failing grades in almost all subjects, the public school formally promoted him to Class 9 pursuant to § 29 SOOSA. No educational support or remedial plans were provided (see <strong>Annex 4, p. 10</strong>).</li>\n</ol>"
+        },
+        {
+                "id": "E",
+                "title": "Official Admissions Regarding the Lack of Quality Control",
+                "content": "<ol>\n<li>On 03.06.2025, LASUB spokesman Clemens Arndt publicly admitted in a newspaper article that the authority does not perform empirical evaluations of teaching quality (see <strong>Annex 7, p. 22-27</strong>).</li>\n<li>Following a request under the Saxon Transparency Act, the SMK issued a formal decision on 23.04.2026 confirming that:</li>\n<li>All regular external evaluations at public schools in Saxony have been completely suspended since 2015;</li>\n<li>No mandatory cycle or plan for external evaluations exists;</li>\n<li>Internal school evaluations are not accessible to the school supervisory authority;</li>\n<li>The authority does not compile statistics regarding parental complaints about school quality (see <strong>Annex 23, p. 116-119</strong>).</li>\n</ol>"
+        },
+        {
+                "id": "F",
+                "title": "Exhaustion of Domestic Remedies",
+                "content": "<ol>\n<li>On 05.01.2026, the applicant filed a constitutional complaint with the Federal Constitutional Court (<em>Bundesverfassungsgericht</em>), registered under case no. 1 BvR 242/26 (see <strong>Annex 13, p. 49-74</strong>).</li>\n<li>On 23.03.2026, the Federal Constitutional Court decided not to accept the complaint for decision, providing no reasoning pursuant to § 93d BVerfGG (see <strong>Annex 19, p. 100-101</strong>). The decision was served on 25.03.2026.</li>\n</ol>"
+        },
+        {
+                "id": "G",
+                "title": "Ongoing Coercive Proceedings",
+                "content": "<ol>\n<li>On 18.02.2026, the school board initiated monitoring of Lucas's compulsory vocational school attendance, demanding immediate enrollment (see <strong>Annex 15, p. 83-85</strong>).</li>\n<li>On 17.03.2026, the City of Dresden initiated new administrative fine and coercive fine (<em>Zwangsgeld</em>) proceedings, threatening a coercive fine of up to EUR 25,000 or coercive detention (see <strong>Annex 17, p. 95-96</strong>).</li>\n<li>To be admitted to the state <em>Schulfremdenprüfung</em> in June 2026, Lucas was legally required <em>not</em> to be enrolled at any school. Forcing school enrollment in March 2026 would have legally disqualified Lucas from taking the graduation exam.</li>\n</ol>\n<hr class=\"divider\"/>"
+        }
+];
+
+        function renderTimeline() {
+            const container = document.getElementById('timeline-list');
+            if (!container) return;
+            
+            container.innerHTML = '';
+            
+            timelineData.forEach((node) => {
+                const stepDiv = document.createElement('div');
+                stepDiv.id = 'timeline-node-' + node.id;
+                stepDiv.className = 'timeline-node';
+                
+                // Add specific node styles depending on success or warning milestones
+                if (['C', 'E'].includes(node.id)) {
+                    stepDiv.classList.add('success-node');
+                } else if (['A', 'D', 'G'].includes(node.id)) {
+                    stepDiv.classList.add('warning-node');
+                }
+                
+                // Set initial state (first node open)
+                if (node.id === 'A') {
+                    stepDiv.classList.add('active');
+                }
+                
+                stepDiv.innerHTML = `
+                    <div class="timeline-marker">${node.id}</div>
+                    <div class="timeline-card" onclick="toggleTimelineNode('${node.id}')">
+                        <div class="timeline-card-header">
+                            <h4 class="timeline-card-title">${node.title}</h4>
+                            <span class="timeline-card-toggle">
+                                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="timeline-card-body">
+                            ${node.content}
+                        </div>
+                    </div>
+                `;
+                
+                container.appendChild(stepDiv);
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!-- Lang selector -->
+        <div class="lang-selector-container">
+            <svg class="lang-globe-icon" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 2a14.5 14.5 0 0 0 0 20M2 12h20"></path>
+            </svg>
+            <select class="lang-select" id="langSelect" onchange="redirectToLang(this.value)">
+                <option value="de">Deutsch</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+
+        <header>
+            <span class="badge">ECHR Application</span>
+            <h1>State School Coercion?</h1>
+            <p class="subtitle">Only with quality control and child-friendly remedies.</p>
+        </header>
+
+        <!-- Navigation Tabs -->
+        <div class="tabs-container">
+            <div class="tabs-nav">
+                <button class="tab-btn active" onclick="switchTab(event, 'overview-tab')">Overview</button>
+                <button class="tab-btn" onclick="switchTab(event, 'facts-tab')">Timeline</button>
+                <button class="tab-btn" onclick="switchTab(event, 'legal-tab')">Legal Violations</button>
+                <button class="tab-btn" onclick="switchTab(event, 'documents-tab')">Documents</button>
+            </div>
+
+            <!-- Tab 1: Overview -->
+            <div id="overview-tab" class="tab-content active">
+                <div class="card">
+                    <h2>Introduction and Purpose of this Statement</h2>
+                    <p>This Additional Statement is submitted pursuant to Rule 47 § 2(a) of the Rules of Court to supplement and elaborate on the facts and legal arguments summarized in the official ECHR Application Form (Sections E and F). It is designed to provide the Court with the necessary context and detailed legal reasoning regarding a systemic constitutional and human rights failure within the educational administration and the judiciary of the Federal Republic of Germany.</p>
+<hr class="divider"/>
+                </div>
+                
+                <div class="card">
+                    <h2>The Tripartite Relationship and the Systemic Rights Vacuum</h2>
+                    <p>This case does not concern a standard dispute over administrative non-compliance. Rather, it exposes a fundamental, systemic imbalance within the German educational and judicial framework regarding the tripartite relationship between the child (as an independent bearer of human rights), the parents (as the primary holders of the duty of care), and the State (as the supervisor of the educational system).</p>
+<p>In a democratic society, this tripartite relationship must remain in a careful equilibrium. The State's authority to enforce compulsory school attendance is not an absolute right of physical custody over children. It is constitutionally and internationally justified solely as a means to achieve a legitimate purpose: to guarantee the child’s right to effective education and integration.</p>
+<p>However, the respondent State has systematically dismantled the essential safeguards that keep this relationship in balance:</p>
+<ol>
+<li><strong>The Abandonment of Quality Assurance:</strong> By completely suspending all regular external evaluations of public schools since 2015 (see Annex 23, p. 117), the executive is operating its school monopoly in a qualitative vacuum. The State demands physical submission to its institutions under threat of imprisonment and ruinous fines, while simultaneously refusing to verify whether these institutions meet basic pedagogical and safety standards.</li>
+<li><strong>The Procedural Exclusion of the Child:</strong> The domestic legal system treats the child as a mere object of administrative enforcement. The child's own distress, academic collapse, and explicit wishes are declared "legally irrelevant" by the courts, and the minor is systematically denied the right to be heard (see Annex 6, p. 19 and Annex 9, p. 34).</li>
+<li><strong>The Illusory Nature of Judicial Remedies:</strong> The domestic legal framework offers no realistic court path to challenge school quality or pedagogical failures. Under established German administrative law (the <em>Schutznormtheorie</em>), statutory educational goals (§ 1 SächsSchulG) and quality assurance provisions (§ 3a SächsSchulG) are classified as mere "programmatic principles" (<em>Programmsätze</em>) serving the public interest, rather than granting individual, actionable rights (<em>subjektiv-öffentliche Rechte</em>) to students or parents. Consequently, any administrative lawsuit seeking to enforce these standards would be dismissed as inadmissible for lack of standing. Even if such a path were theoretically open, the duration of administrative litigation (typically 1.5 to 3 years) renders it completely ineffective to address acute child welfare hazards. Furthermore, the minor child, who is the actual bearer of the right to education, lacks independent procedural standing to bring such actions, leaving him entirely dependent on parental representation while being subjected to direct state coercion. Concurrently, in the repressive enforcement proceedings, the domestic courts refuse to consider school defects at all, declaring them legally irrelevant to the absolute obligation of physical presence (see Annex 6, p. 19).</li>
+<li><strong>The Lack of Independent Oversight and Child-Friendly Remedies:</strong> Unlike in other European jurisdictions that balance compulsory education with low-threshold protection mechanisms—such as an independent school ombudsman to whom children can directly appeal (e.g., in Sweden or Estonia)—the respondent State provides no independent, out-of-court oversight body. The school supervisory authority (LASUB) is part of the same executive branch that operates the schools, creating an inherent conflict of interest. This is empirically proven by the applicant's own attempts to seek help from the school supervisory authority, which refused to act and instead shielded the school, declaring the statutory goals to be non-binding (see Annex 1, p. 1-2). For a minor child, the lack of an independent, accessible complaint mechanism leaves him entirely defenseless against institutional abuse and pedagogical failure within the state school monopoly.</li>
+</ol>
+<p>As a direct consequence of this systemic vacuum, the applicant was trapped in an unavoidable conflict of duties (<em>Pflichtenkollision</em>). Because every administrative, judicial, and private avenue for relief was demonstrably blocked—the school supervisory authority refusing assistance, the courts offering no timely or admissible remedy, and private schools being saturated—the applicant faced a binary choice: either enforce the physical attendance obligation by forcing his child back into an environment that actively endangered his well-being, development, and academic prospects, or fulfill his primary parental duty of care under Article 8 of the Convention and national civil law (§ 1666 BGB) by advising his child to study at home and supporting his subsequent decision to remain absent for self-protection, thereby securing his education through home-study. Under these extreme circumstances, advising the child and supporting his decision to avoid the harmful school environment was not an act of civil disobedience, but the absolute <em>ultima ratio</em>—the sole remaining path to protect the child's right to education. The empirical success of this choice is documented by the state's own graduation certificate (see Annex 24, p. 120-122). Furthermore, the child's successful social and civic integration is evidenced by his voluntary enlistment in the German Federal Armed Forces (<em>Bundeswehr</em>) for Voluntary Military Service starting in September 2026, demonstrating a profound commitment to defend the democratic state. Yet, the State continues to prosecute the applicant, threatening him with a coercive fine of up to EUR 25,000 or coercive detention (see Annex 17, p. 95-96 and Annex 22, p. 107-115). This case, therefore, far transcends a minor administrative dispute over a nominal fine; it represents a continuous, existence-threatening cycle of state coercion designed to financially ruin and psychologically exhaust the applicant. He is thus penalized for successfully resolving a conflict of duties that the State itself created and refused to remedy.</p>
+<hr class="divider"/>
+                </div>
+            </div>
+
+            <!-- Tab 2: Chronology -->
+            <div id="facts-tab" class="tab-content">
+                <div class="card">
+                    <h2>Timeline of Events</h2>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">From pedagogical abuse in public school to self-study graduation in regular time, and ongoing coercive prosecution.</p>
+                    
+                    <p style="font-size: 0.9rem; font-weight: 600; color: #a5b4fc; margin-bottom: 1rem;">Click on the milestones to view the details:</p>
+                    <div class="timeline-container" id="timeline-list">
+                        <!-- Loaded dynamically -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 3: Legal arguments -->
+            <div id="legal-tab" class="tab-content">
+                <div class="card">
+                    <h2>Legal Arguments under the Convention</h2>
+                    <p style="color: var(--text-muted); margin-bottom: 2rem;">The complaints do not challenge compulsory schooling as such, but rather the lack of minimum safeguards when enforced through State coercion.</p>
+                    
+                    <p><em>The applicant's complaints are not directed against compulsory schooling as such. They concern the minimum Convention safeguards required when compulsory schooling is enforced through State coercion.</em></p>
+<div class="dogmatic-section">
+<h3>A. THE DOGMATIC FRAMEWORK: THE STATE'S POSITIVE OBLIGATIONS UNDER THE CONVENTION</h3><ol>
+<li><strong>The Principle of Compulsory Education:</strong> The applicant does not challenge the State's general authority to establish and enforce compulsory school attendance. However, under the Convention, this authority is not an absolute right of custody over children. The enforcement of compulsory attendance is legally justified solely as a means to achieve a legitimate purpose: to guarantee the child’s right to effective education and integration. If the State decouples coercion from these educational and protective goals, the enforcement loses its human rights legitimacy.</li>
+</ol>
+<ol>
+<li><strong>The Core Safeguards (The Four Positive Duties):</strong> The applicant submits that, taken together, Articles 2 of Protocol No. 1, 8 and 13 of the Convention require four minimum safeguards whenever a State enforces compulsory schooling through a near-monopoly of public education:</li>
+</ol>
+<p>a) <em>The Duty of Quality Assurance:</em> The State must continuously and empirically monitor that public schools meet basic safety, pedagogical, and quality standards.</p>
+<p>b) <em>The Duty of Low-Threshold Independent Oversight:</em> The State must provide an independent, out-of-court oversight mechanism (such as an ombudsman) accessible to both parents and, particularly, minor children.</p>
+<p>c) <em>The Duty of Effective Judicial Remedies:</em> The State must ensure access to timely and effective court remedies to challenge educational failures and safety hazards.</p>
+<p>d) <em>The Duty to Hear the Child:</em> The State must ensure that the child, as an independent bearer of rights, is heard in all administrative and judicial proceedings affecting their education.</p>
+</div>
+<h3>B. SPECIFIC VIOLATIONS OF THE CONVENTION</h3>
+<div class="accordions-container">
+
+            <div class="accordion-item" id="violation_1">
+                <button class="accordion-trigger" onclick="toggleAccordion('violation_1')">
+                    <span class="accordion-title">1. Violation of Article 2 of Protocol No. 1 (Right to Education)</span>
+                    <span class="accordion-icon">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </span>
+                </button>
+                <div class="accordion-content">
+                    <div class="accordion-inner">
+                        <p>##### a) Applicable Principles</p>
+<ol>
+<li>The first sentence of Article 2 of Protocol No. 1 guarantees a right to education that is effective and of sufficient quality (<em>G.L. v. Italy</em>, no. 59751/15, 2020). While the State has a wide margin of appreciation in organizing its educational system, including the enforcement of compulsory school attendance, this enforcement must always serve the child's interest in receiving a meaningful education. The applicant submits that compulsory attendance cannot remain Convention-compliant where the State continues to enforce attendance despite the absence of safeguards capable of ensuring that such attendance serves the child's educational development and well-being.</li>
+</ol>
+<p>##### b) Application to the Present Case</p>
+<ol>
+<li>The respondent State has violated this right by completely suspending all regular external school evaluations since 2015 (see <strong>Annex 23, p. 117</strong>). By abandoning all mechanisms capable of verifying whether compulsory attendance still served its educational purpose, the respondent State continued to enforce attendance independently of any objective assessment of educational quality.</li>
+<li>The core violation consists of the State forcing the family to choose between the child's well-being and compulsory school attendance. When Lucas experienced pedagogical conflicts and school anxiety, the State offered no quality-assured alternative, and private replacement schools were unavailable due to regional capacity exhaustion (see <strong>Annex 14, p. 79-80</strong>). The enforcement of the attendance obligation through administrative fines and the threat of detention placed the applicant in a position where compliance with the school presence mandate directly conflicted with his parental duty to protect his child's development. Despite the child subsequently completing his education successfully through home-study (see <strong>Annex 24, p. 120-122</strong>), the State has continued to pursue enforcement proceedings against the applicant.</li>
+</ol>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="accordion-item" id="violation_2">
+                <button class="accordion-trigger" onclick="toggleAccordion('violation_2')">
+                    <span class="accordion-title">2. Violation of Article 8 of the Convention (Respect for Private and Family Life)</span>
+                    <span class="accordion-icon">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </span>
+                </button>
+                <div class="accordion-content">
+                    <div class="accordion-inner">
+                        <p>##### a) Applicable Principles</p>
+<ol>
+<li>Any interference with the right to respect for private and family life under Article 8 § 1 must be "in accordance with the law," pursue a legitimate aim, and be "necessary in a democratic society" (Article 8 § 2). The concept of lawfulness requires that domestic law must provide safeguards against arbitrary interference by public authorities. Furthermore, the State has a positive obligation to protect children from physical and psychological harm within public institutions.</li>
+</ol>
+<p>##### b) Application to the Present Case</p>
+<ol>
+<li>In Germany, school coercion is derived from the state's school supervision mandate under Article 7 Paragraph 1 of the Basic Law (GG). This mandate constitutes a positive constitutional duty to actively supervise schools. The systematic abandonment of statutory supervisory mechanisms (see <strong>Annex 23, p. 117</strong>) raises serious doubts as to whether the interference retained the quality of lawfulness required by Article 8 § 2.</li>
+<li>Under domestic law, the State assumes a positive duty to protect child welfare, intervening in domestic family settings under § 1666 BGB (see <strong>Annex 14, p. 75</strong>). However, the same protective standards are not applied within the public school system, where the domestic courts declare themselves incompetent to review school conditions, and the supervisory authorities do not intervene to address reported abuses (see <strong>Annex 14, p. 75-76</strong>).</li>
+<li>Under these circumstances, the continuation of coercive measures—specifically the threat of a EUR 25,000 fine or detention—cannot be considered "necessary in a democratic society". The socialization and civic integration of the child have been demonstrated by his subsequent voluntary enlistment in the German Federal Armed Forces (<em>Bundeswehr</em>) (see <strong>Annex 24</strong>). The imposition of severe financial and custodial sanctions against the father under these conditions exceeds what is required to achieve the legitimate educational aims of the State.</li>
+</ol>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="accordion-item" id="violation_3">
+                <button class="accordion-trigger" onclick="toggleAccordion('violation_3')">
+                    <span class="accordion-title">3. Violation of Article 10 of the Convention (Freedom of Expression)</span>
+                    <span class="accordion-icon">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </span>
+                </button>
+                <div class="accordion-content">
+                    <div class="accordion-inner">
+                        <p>##### a) Applicable Principles</p>
+<ol>
+<li>Article 10 protects the right to impart and receive information and ideas without interference by public authority. This protection extends to private consultations and advice within the family unit, especially regarding decisions that directly affect the child's development and well-being.</li>
+</ol>
+<p>##### b) Application to the Present Case</p>
+<ol>
+<li>The applicant was convicted by the Local Court Dresden explicitly for the content of his private communication with his son (see <strong>Annex 6, p. 15, 19</strong>). The court treated the applicant's honest advice to Lucas—that home-study was the superior option to protect his development under the school's harmful conditions—as proof of criminal intent. Penalizing a father for imparting factual assessments and honest parental guidance to his child violates Article 10.</li>
+</ol>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="accordion-item" id="violation_4">
+                <button class="accordion-trigger" onclick="toggleAccordion('violation_4')">
+                    <span class="accordion-title">4. Violation of Article 6 § 1 & Article 8 of the Convention (Procedural Rights)</span>
+                    <span class="accordion-icon">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </span>
+                </button>
+                <div class="accordion-content">
+                    <div class="accordion-inner">
+                        <p>##### a) Applicable Principles</p>
+<ol>
+<li>Under Article 6 § 1, everyone has the right to a fair hearing, which includes the right to a reasoned decision where courts must address the essential arguments of the parties. Furthermore, the procedural safeguards of Article 8 require that in decisions affecting children, the child must be given a meaningful opportunity to be heard and their views must be duly considered in accordance with their age and maturity.</li>
+</ol>
+<p>##### b) Application to the Present Case</p>
+<ol>
+<li>Throughout the domestic proceedings, the courts refused to hear Lucas (who was 15 years old during the trial and 16 during the appeal) or to allow him to express his views. The Higher Regional Court (<em>OLG</em>) Dresden adopted the written submission of the General Prosecutor's Office (<em>GStA</em>) Dresden without modification, which explicitly declared that the minor’s perspective was "not decisive" (<em>nicht maßgebend</em>) for the enforcement of school attendance (see <strong>Annex 9, p. 34</strong> and <strong>Annex 11, p. 39-40</strong>). The core violation is not merely that the child was not heard, but that the court explicitly ruled that his view was legally meaningless.</li>
+<li>Furthermore, the domestic courts did not address the substance of the applicant's factual submissions regarding the school abuses. The Local Court Dresden declared the school's deficiencies "legally irrelevant" to the attendance obligation (see <strong>Annex 6, p. 19</strong>), the Higher Regional Court dismissed the appeal without examining the merits (see <strong>Annex 11, p. 40</strong>), and the Federal Constitutional Court declined to accept the complaint without statement of reasons (see <strong>Annex 19, p. 100-101</strong>). By treating the documented safety and pedagogical failures as legally irrelevant, the domestic courts failed to examine the core of the applicant's defense, thereby violating the requirement of a fair hearing.</li>
+</ol>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="accordion-item" id="violation_5">
+                <button class="accordion-trigger" onclick="toggleAccordion('violation_5')">
+                    <span class="accordion-title">5. Violation of Article 13 of the Convention (Right to an Effective Remedy)</span>
+                    <span class="accordion-icon">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </span>
+                </button>
+                <div class="accordion-content">
+                    <div class="accordion-inner">
+                        <p>##### a) Applicable Principles</p>
+<ol>
+<li>Article 13 guarantees the availability at the national level of a remedy to enforce the substance of the Convention rights. A remedy must be "effective" in practice as well as in law, meaning it must be accessible, low-threshold, and capable of providing direct redress.</li>
+</ol>
+<p>##### b) Application to the Present Case</p>
+<ol>
+<li>The State provides no independent, low-threshold complaint mechanism for parents or, particularly, for minor children. The school supervisory authority (LASUB) acts as both the operator and the supervisor of the public schools, creating an inherent conflict of interest. When the applicant petitioned the authority, it actively shielded the school and rejected the complaints (see <strong>Annex 1, p. 1-2</strong> and <strong>Annex 3, p. 8-9</strong>).</li>
+<li>The judicial system offers only a circular remedy trap. Under German administrative court practice (<em>Schutznormtheorie</em>), parents and students lack standing to sue for compliance with school quality standards, as these are classified as non-justiciable "programmatic principles" (see <strong>Annex 14, p. 77</strong>). Administrative lawsuits take between 1.5 and 3 years, ensuring that cases are routinely dismissed as moot (<em>Erledigung</em>) once the school year ends. Meanwhile, in the repressive enforcement proceedings, the courts declare the school’s failures "legally irrelevant" (see <strong>Annex 6, p. 19</strong>). This circular referral insulates the executive's illegal practice from any judicial review.</li>
+</ol>
+                    </div>
+                </div>
+            </div>
+            
+</div>
+                </div>
+            </div>
+
+            <!-- Tab 4: Documents list -->
+            <div id="documents-tab" class="tab-content">
+                <div class="card">
+                    <h2>Index of Documents and Transcripts</h2>
+                    <p style="color: var(--text-muted); margin-bottom: 1rem;">Full-text transcripts of all relevant decisions, notices, and court records.</p>
+                    
+                    
+    <div class="docs-list">
+        <div class="doc-item-card">
+            <span class="doc-category">Main Statements</span>
+            <h4>Additional Statement (Part B) – English</h4>
+            <p>The detailed human rights arguments challenging the German state actions under Articles 2 of Protocol 1, 8, 10, 6, and 13 ECHR.</p>
+            <div class="doc-actions">
+                <a href="https://github.com/henry1986/rechtlicheAuseinandersetzung-web/blob/main/content/zusatzschrift_en.md" target="_blank" class="doc-btn">GitHub-View</a>
+                <a href="content/zusatzschrift_en.md" target="_blank" class="doc-btn secondary">Raw Markdown (.md)</a>
+            </div>
+        </div>
+        <div class="doc-item-card">
+            <span class="doc-category">Court Records</span>
+            <h4>Federal Constitutional Court Decision (1 BvR 242/26)</h4>
+            <p>The final domestic decision by the Federal Constitutional Court rejecting the complaint without reasoning.</p>
+            <div style="font-size: 0.8rem; color: var(--text-muted); font-style: italic; margin-top: auto;">Details included in the timeline (Milestone F).</div>
+        </div>
+        <div class="doc-item-card">
+            <span class="doc-category">Evidence</span>
+            <h4>Graduation Certificate (Realschulabschluss)</h4>
+            <p>The official state certificate successfully obtained on June 26, 2026, within regular school time (GPA 2.71).</p>
+            <div style="font-size: 0.8rem; color: var(--text-muted); font-style: italic; margin-top: auto;">Details included in the timeline (Milestone C).</div>
+        </div>
+        <div class="doc-item-card">
+            <span class="doc-category">Administrative Records</span>
+            <h4>Vocational School Monitoring & Coercion Case File</h4>
+            <p>The Dresden administration file threatening EUR 25,000 in coercive fines or detention.</p>
+            <div style="font-size: 0.8rem; color: var(--text-muted); font-style: italic; margin-top: auto;">Details included in the timeline (Milestone G).</div>
+        </div>
+        <div class="doc-item-card">
+            <span class="doc-category">Transparency disclosures</span>
+            <h4>Ministry of Education Disclosure Decision</h4>
+            <p>Official decision confirming the suspension of all external school quality evaluations in Saxony since 2015 (redacted, German).</p>
+            <div class="doc-actions">
+                <a href="https://github.com/henry1986/rechtlicheAuseinandersetzung-web/blob/main/content/transparenzbescheid_de.md" target="_blank" class="doc-btn">GitHub-View</a>
+                <a href="content/transparenzbescheid_de.md" target="_blank" class="doc-btn secondary">Raw Markdown (.md)</a>
+            </div>
+        </div>
+    </div>
+    
+                </div>
+            </div>
+        </div>
+
+        <!-- Comments via Giscus -->
+        <div class="comments-section">
+            <h3 class="comments-title">Diskussion & Fragen</h3>
+            <script src="https://giscus.app/client.js"
+                    data-repo="menschenrechte-bildung/rechtlicheAuseinandersetzung-web"
+                    data-repo-id="R_kgDOTYLOYA"
+                    data-category="General"
+                    data-category-id="DIC_kwDOTYLOYM4DBLMy"
+                    data-mapping="pathname"
+                    data-strict="0"
+                    data-reactions-enabled="1"
+                    data-emit-metadata="0"
+                    data-input-position="bottom"
+                    data-theme="transparent_dark"
+                    data-lang="en"
+                    crossorigin="anonymous"
+                    async>
+            </script>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>Dokumentation zur Individualbeschwerde beim EGMR. Web-Technologie analog zum <a href="https://github.com/henry1986/submodule-doc-pattern" target="_blank">Submodule Doc Pattern</a>.</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+# ECHR Application: Martin & Lucas Heinrich v. Germany (LLM Guide)
+
+This guide provides a structured overview of the ECHR (EGMR) human rights application challenging the German state's enforcement of compulsory school attendance (Schulzwang) in a systemic quality-control vacuum.
+
+---
+
+## 🎯 Case Core Concept
+The applicant (Martin Heinrich) challenges the domestic judgments and administrative practices of the Free State of Saxony (Germany) enforcing compulsory school presence under threat of severe financial ruin (EUR 25,000) and detention, despite:
+1. **The total suspension of school quality evaluations:** Since 2015, the state has suspended all regular external school quality evaluations, operating public education in a qualitative vacuum.
+2. **The procedural exclusion of the child:** Refusing to hear the minor child in domestic proceedings and declaring his well-being legally irrelevant.
+3. **The lack of effective remedies:** No judicial or out-of-court low-threshold path exists to challenge school failures (due to the *Schutznormtheorie*).
+4. **Successful self-study:** The child successfully obtained his state-certified graduation certificate (*Realschulabschluss*) in regular time via home-study and enlisted in the Federal Armed Forces (*Bundeswehr*).
+
+---
+
+## 📂 Repository Structure (Public Files)
+- **`content/zusatzschrift_de.md`**: The detailed ECHR Additional Statement (Part B) in German (redacted).
+- **`content/zusatzschrift_en.md`**: The detailed ECHR Additional Statement (Part B) in English (redacted).
+- **`content/transparenzbescheid_de.md`**: Official disclosure decision by the Saxon Ministry of Education (SMK) confirming the complete suspension of external school quality evaluations since 2015 (redacted).
+- **`template.html`**: Visual template for the public website.
+- **`build.py`**: Zero-dependency Python script compiling Markdown documents into index.html (German) and index_en.html (English).
+
+---
+
+## 📅 Timeline & Facts Summary
+
+*   **A. Public School Incidents (Dec 2023):** Lucas Heinrich (born 2009) experiences pedagogical abuse and physical discomfort (unreasonable heating control/restroom bans) at 25th Secondary School Dresden. He decides to stop entering the school building on 18.12.2023. The father supports home-study.
+*   **B. Oversight Failure (Feb 2023):** State office (LASUB) rejects investigations into school goals, declaring statutory goals (§ 1 SächsSchulG) to be non-binding "programmatic principles".
+*   **C. Academic Success & Civic Integration (2026):** Lucas passes the state exam for external candidates (*Schulfremdenprüfung*) in June 2026 in regular time (GPA 2.71) and enlists in the German Federal Armed Forces (*Bundeswehr*).
+*   **D. Administrative Sanctions & Court Rulings (2024-2025):** Local Court Dresden convicts the father, declaring documented school abuses "legally irrelevant" and treating parental advice as proof of criminal intent. Higher Regional Court and Federal Constitutional Court reject appeals without reasoning.
+*   **E. Formal Admission of Quality Control Deficit (Apr 2026):** Under the Saxon Transparency Act, the SMK formally discloses that all regular external school evaluations have been suspended since 2015, and no statistics on parental complaints are kept.
+*   **F. Ongoing Prosecution (Feb-Mar 2026):** Authorities initiate monitoring of vocational school attendance, demanding enrollment while threatening EUR 25,000 in coercive fines or detention.
+
+---
+
+## ⚖️ Legal Violations (ECHR / EMRK)
+
+1.  **Article 2 of Protocol No. 1 (Right to Education):** Enforcing compulsory school attendance in a quality-control vacuum where the State refuses to verify pedagogical and safety standards.
+2.  **Article 8 (Respect for Private and Family Life):** Disproportionate interference via threat of imprisonment and ruinous fines, coupled with the State failing its positive supervisory mandate (Article 7 GG).
+3.  **Article 10 (Freedom of Expression):** Penalizing the father's honest private consultation and advice to his son regarding school deficiencies.
+4.  **Article 6 § 1 & Article 8 (Procedural Rights):** Systematic refusal to hear the minor child (15/16 years old) and refusing to examine core defense arguments regarding child welfare.
+5.  **Article 13 (Right to an Effective Remedy):** Circular referral trap (administrative courts declaring lack of standing under *Schutznormtheorie*, while enforcement courts declare school defects "legally irrelevant"), and the lack of an independent school ombudsman.
