@@ -296,7 +296,9 @@ def build():
             "form_label_message": "Ihre Nachricht",
             "form_btn_send": "Anfrage senden",
             "form_sending_status": "Wird gesendet...",
-            "form_success_message": "Vielen Dank! Ihre Anfrage wurde erfolgreich übermittelt."
+            "form_success_message": "Vielen Dank! Ihre Anfrage wurde erfolgreich übermittelt.",
+            "docs_top_notice_text": "Für Anfragen zum Zugang zu ungeschwärzten Originaldokumenten oder für wissenschaftlichen Austausch nutzen Sie bitte das",
+            "docs_top_notice_link": "Kontaktformular am Ende dieser Seite"
         },
         "en": {
             "meta_title": "ECHR Application: Martin Heinrich v. Germany",
@@ -331,7 +333,9 @@ def build():
             "form_label_message": "Your Message",
             "form_btn_send": "Send Request",
             "form_sending_status": "Sending...",
-            "form_success_message": "Thank you! Your request has been successfully submitted."
+            "form_success_message": "Thank you! Your request has been successfully submitted.",
+            "docs_top_notice_text": "For inquiries regarding access to unredacted original documents or academic exchange, please use the",
+            "docs_top_notice_link": "contact form at the bottom of this page"
         }
     }
     

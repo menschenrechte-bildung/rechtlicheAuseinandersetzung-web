@@ -1012,7 +1012,13 @@
                     <h2>{{documents_title}}</h2>
                     <p style="color: var(--text-muted); margin-bottom: 1rem;">{{documents_desc}}</p>
                     
-                    <div class="contact-form-container" style="margin-top: 1.5rem; margin-bottom: 2.5rem; background: rgba(99, 102, 241, 0.02); border: 1px solid var(--border); border-radius: 14px; padding: 1.75rem;">
+                    <p style="font-size: 0.95rem; line-height: 1.5; color: var(--text-muted); margin-bottom: 2rem;">
+                        {{docs_top_notice_text}} <a href="#contact-section" style="color: #a5b4fc; text-decoration: underline; font-weight: 600;">{{docs_top_notice_link}}</a>.
+                    </p>
+                    
+                    {{documents_content}}
+                    
+                    <div class="contact-form-container" id="contact-section" style="margin-top: 3.5rem; background: rgba(99, 102, 241, 0.02); border: 1px solid var(--border); border-radius: 14px; padding: 1.75rem;">
                         <h4 style="margin: 0 0 0.5rem 0; color: #ffffff; font-size: 1.15rem;">{{docs_contact_title}}</h4>
                         <p style="margin: 0 0 1.5rem 0; font-size: 0.95rem; line-height: 1.5; color: var(--text-muted);">{{docs_contact_text}}</p>
                         
@@ -1048,8 +1054,6 @@
                             </div>
                         </form>
                     </div>
-                    
-                    {{documents_content}}
                 </div>
 
                 <div class="tab-navigation">
