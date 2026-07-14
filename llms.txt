@@ -6,10 +6,10 @@ This guide provides a structured overview of the ECHR (EGMR) human rights applic
 
 ## 🎯 Case Core Concept
 The applicant (Martin Heinrich) challenges the domestic judgments and administrative practices of the Free State of Saxony (Germany) enforcing compulsory school presence under threat of severe financial ruin (EUR 25,000) and detention, despite:
-1. **The total suspension of school quality evaluations:** Since 2015, the state has suspended all regular external school quality evaluations, operating public education in a qualitative vacuum.
-2. **The procedural exclusion of the child:** Refusing to hear the minor child in domestic proceedings and declaring his well-being legally irrelevant.
-3. **The lack of effective remedies:** No judicial or out-of-court low-threshold path exists to challenge school failures (due to the *Schutznormtheorie*).
-4. **Successful self-study:** The child successfully obtained his state-certified graduation certificate (*Realschulabschluss*) in regular time via home-study and enlisted in the Federal Armed Forces (*Bundeswehr*).
+1. **The total suspension of school quality evaluations:** Since 2015, the state has suspended all regular external school quality evaluations, operating public education in a qualitative vacuum, while the Ministry actively distorted § 3a Abs. 2 SächsSchulG to shift all quality duties onto individual schools.
+2. **The procedural exclusion of the child:** Refusing to hear the minor child in domestic proceedings and declaring his perspective and well-being legally irrelevant.
+3. **The lack of effective remedies:** No judicial or out-of-court low-threshold path exists to challenge school failures (due to the *Schutznormtheorie*), creating a circular trap and forcing parents into an unreasonable requirement of prior compliance (*unzumutbare Vorleistungspflicht*) while facing legal aid barriers.
+4. **Successful self-study:** The child successfully obtained his state-certified graduation certificate (*Realschulabschluss*) in regular time via home-study (GPA 2.71) and enlisted in the Federal Armed Forces (*Bundeswehr*). Resisting the state's coercion to enroll at a school in March 2026 was the *exclusive condition* that enabled Lucas to take the external candidate exam, as school enrollment would have legally disqualified him.
 
 ---
 
@@ -26,17 +26,17 @@ The applicant (Martin Heinrich) challenges the domestic judgments and administra
 
 *   **A. Public School Incidents (Dec 2023):** Lucas Heinrich (born 2009) experiences pedagogical abuse and physical discomfort (unreasonable heating control/restroom bans) at 25th Secondary School Dresden. He decides to stop entering the school building on 18.12.2023. The father supports home-study.
 *   **B. Oversight Failure (Feb 2023):** State office (LASUB) rejects investigations into school goals, declaring statutory goals (§ 1 SächsSchulG) to be non-binding "programmatic principles".
-*   **C. Academic Success & Civic Integration (2026):** Lucas passes the state exam for external candidates (*Schulfremdenprüfung*) in June 2026 in regular time (GPA 2.71) and enlists in the German Federal Armed Forces (*Bundeswehr*).
-*   **D. Administrative Sanctions & Court Rulings (2024-2025):** Local Court Dresden convicts the father, declaring documented school abuses "legally irrelevant" and treating parental advice as proof of criminal intent. Higher Regional Court and Federal Constitutional Court reject appeals without reasoning.
-*   **E. Formal Admission of Quality Control Deficit (Apr 2026):** Under the Saxon Transparency Act, the SMK formally discloses that all regular external school evaluations have been suspended since 2015, and no statistics on parental complaints are kept.
-*   **F. Ongoing Prosecution (Feb-Mar 2026):** Authorities initiate monitoring of vocational school attendance, demanding enrollment while threatening EUR 25,000 in coercive fines or detention.
+*   **C. Academic Success & Civic Integration (2026):** Lucas passes the state exam for external candidates (*Schulfremdenprüfung*) in June 2026 in regular time (GPA 2.71) and enlists in the German Federal Armed Forces (*Bundeswehr*). Refusing the state's command to register at school in March 2026 was the *exclusive condition* to take the exam.
+*   **D. Administrative Sanctions & Court Rulings (2024-2025):** Local Court Dresden convicts the father, declaring school abuses "legally irrelevant" and treating parental advice as proof of intent. Higher Regional Court and Federal Constitutional Court reject appeals without addressing the state's abdication of supervisory duties under Art 7 GG.
+*   **E. Formal Admission of Quality Control Deficit (Apr 2026):** Under the Saxon Transparency Act, the SMK discloses that all regular external school evaluations have been suspended since 2015, and no statistics on parental complaints are kept. It actively distorted the text of § 3a SächsSchulG to shirk supervision.
+*   **F. Ongoing Prosecution (Feb-Mar 2026):** Authorities initiate monitoring of vocational school attendance, demanding enrollment under threat of EUR 25,000 in coercive fines or detention. Forcing enrollment in March 2026 would have placed Lucas in a dead-end Vocational Preparation Year (BVJ) and disqualified him from the exam.
 
 ---
 
 ## ⚖️ Legal Violations (ECHR / EMRK)
 
-1.  **Article 2 of Protocol No. 1 (Right to Education):** Enforcing compulsory school attendance in a quality-control vacuum where the State refuses to verify pedagogical and safety standards.
-2.  **Article 8 (Respect for Private and Family Life):** Disproportionate interference via threat of imprisonment and ruinous fines, coupled with the State failing its positive supervisory mandate (Article 7 GG).
-3.  **Article 10 (Freedom of Expression):** Penalizing the father's honest private consultation and advice to his son regarding school deficiencies.
-4.  **Article 6 § 1 & Article 8 (Procedural Rights):** Systematic refusal to hear the minor child (15/16 years old) and refusing to examine core defense arguments regarding child welfare.
-5.  **Article 13 (Right to an Effective Remedy):** Circular referral trap (administrative courts declaring lack of standing under *Schutznormtheorie*, while enforcement courts declare school defects "legally irrelevant"), and the lack of an independent school ombudsman.
+1.  **Article 2 of Protocol No. 1 (Right to Education):** Enforcing compulsory school attendance in a quality-control vacuum where the State refuses to verify pedagogical/safety standards. The state penalizes the father for choosing a home education path that was the *exclusive condition* to achieve graduation, while forcing a state path leading to academic downgrade.
+2.  **Article 8 (Respect for Private and Family Life):** Disproportionate interference via threat of imprisonment and ruinous fines, coupled with the State failing its positive supervisory mandate (Article 7 GG) and ongoing cumulative administrative attrition (parallel proceedings).
+3.  **Article 10 (Freedom of Expression):** Penalizing the father's honest private consultation and advice to his son regarding school deficiencies, effectively demanding parents act as compliant state agents.
+4.  **Article 6 § 1 & Article 8 (Procedural Rights):** Systematic refusal to hear the minor child (15/16 years old) and refusing to examine core defense arguments regarding child welfare, creating a contradiction in the application of Article 7 GG.
+5.  **Article 13 (Right to an Effective Remedy):** Circular referral trap (administrative courts declaring lack of standing under *Schutznormtheorie* with legal aid barriers, while enforcement courts declare school defects "legally irrelevant"), and the lack of an independent school ombudsman. Parents face an unreasonable requirement of prior compliance (*unzumutbare Vorleistungspflicht*) during slow litigation.
