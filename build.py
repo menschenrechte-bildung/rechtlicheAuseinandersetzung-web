@@ -352,22 +352,40 @@ def build():
             </div>
         </div>
         <div class="doc-item-card">
-            <span class="doc-category">Gerichtsentscheidungen</span>
-            <h4>Nichtannahmebeschluss des BVerfG (1 BvR 242/26)</h4>
-            <p>Der Beschluss der 2. Kammer des Ersten Senats vom 23. März 2026 zur Verfassungsbeschwerde.</p>
-            <div style="font-size: 0.8rem; color: var(--text-muted); font-style: italic; margin-top: auto;">Details in der Chronologie (Abschnitt F) enthalten.</div>
+            <span class="doc-category">Analysen</span>
+            <h4>Entwicklungs- und Leistungsanalyse</h4>
+            <p>Detaillierte Gegenüberstellung und Analyse der Leistungsentwicklung von Klasse 7 bis zum Abschluss 2026 (geschwärzt).</p>
+            <div class="doc-actions">
+                <a href="https://github.com/henry1986/rechtlicheAuseinandersetzung-web/blob/main/content/zeugnisvergleich_entwicklung.md" target="_blank" class="doc-btn">GitHub-Ansicht</a>
+                <a href="content/zeugnisvergleich_entwicklung.md" target="_blank" class="doc-btn secondary">Rohdatei (.md)</a>
+            </div>
+        </div>
+        <div class="doc-item-card">
+            <span class="doc-category">Beweismittel</span>
+            <h4>Jahreszeugnis Klasse 7b (2022/2023)</h4>
+            <p>Zeugnis der 25. Oberschule Dresden vor dem Leistungseinbruch (Notenschnitt 3,91, Versetzung in den Hauptschulzweig, geschwärzt).</p>
+            <div class="doc-actions">
+                <a href="https://github.com/henry1986/rechtlicheAuseinandersetzung-web/blob/main/content/zeugnis_klasse_7b.md" target="_blank" class="doc-btn">GitHub-Ansicht</a>
+                <a href="content/zeugnis_klasse_7b.md" target="_blank" class="doc-btn secondary">Rohdatei (.md)</a>
+            </div>
+        </div>
+        <div class="doc-item-card">
+            <span class="doc-category">Beweismittel</span>
+            <h4>Jahreszeugnis Klasse 8b (2023/2024)</h4>
+            <p>Zeugnis der 25. Oberschule Dresden nach Beginn der Abwesenheit (96 unentschuldigte Fehltage, formale Versetzung nach § 29 SOOSA, geschwärzt).</p>
+            <div class="doc-actions">
+                <a href="https://github.com/henry1986/rechtlicheAuseinandersetzung-web/blob/main/content/zeugnis_klasse_8b.md" target="_blank" class="doc-btn">GitHub-Ansicht</a>
+                <a href="content/zeugnis_klasse_8b.md" target="_blank" class="doc-btn secondary">Rohdatei (.md)</a>
+            </div>
         </div>
         <div class="doc-item-card">
             <span class="doc-category">Beweismittel</span>
             <h4>Abschlusszeugnis (Realschulabschluss)</h4>
-            <p>Das am 26.06.2026 erfolgreich in Regelzeit bestandene Zeugnis für Schulfremde (Durchschnitt 2,71).</p>
-            <div style="font-size: 0.8rem; color: var(--text-muted); font-style: italic; margin-top: auto;">Details in der Chronologie (Abschnitt C) enthalten.</div>
-        </div>
-        <div class="doc-item-card">
-            <span class="doc-category">Behördenakten</span>
-            <h4>Akte Berufsschulpflichtüberwachung</h4>
-            <p>Die Akte der Stadt Dresden ab Februar 2026 bezüglich der Androhung von 25.000 EUR Zwangsgeld oder Ersatzwangshaft.</p>
-            <div style="font-size: 0.8rem; color: var(--text-muted); font-style: italic; margin-top: auto;">Details in der Chronologie (Abschnitt G) enthalten.</div>
+            <p>Das am 26.06.2026 in Regelzeit bestandene Zeugnis der staatlichen Schulfremdenprüfung (Notenschnitt 2,71, geschwärzt).</p>
+            <div class="doc-actions">
+                <a href="https://github.com/henry1986/rechtlicheAuseinandersetzung-web/blob/main/content/zeugnis_realschulabschluss.md" target="_blank" class="doc-btn">GitHub-Ansicht</a>
+                <a href="content/zeugnis_realschulabschluss.md" target="_blank" class="doc-btn secondary">Rohdatei (.md)</a>
+            </div>
         </div>
         <div class="doc-item-card">
             <span class="doc-category">Auskünfte</span>
@@ -377,6 +395,18 @@ def build():
                 <a href="https://github.com/henry1986/rechtlicheAuseinandersetzung-web/blob/main/content/transparenzbescheid_de.md" target="_blank" class="doc-btn">GitHub-Ansicht</a>
                 <a href="content/transparenzbescheid_de.md" target="_blank" class="doc-btn secondary">Rohdatei (.md)</a>
             </div>
+        </div>
+        <div class="doc-item-card">
+            <span class="doc-category">Gerichtsentscheidungen</span>
+            <h4>Nichtannahmebeschluss des BVerfG (1 BvR 242/26)</h4>
+            <p>Der Beschluss der 2. Kammer des Ersten Senats vom 23. März 2026 zur Verfassungsbeschwerde.</p>
+            <div style="font-size: 0.8rem; color: var(--text-muted); font-style: italic; margin-top: auto;">Details in der Chronologie (Abschnitt F) enthalten.</div>
+        </div>
+        <div class="doc-item-card">
+            <span class="doc-category">Behördenakten</span>
+            <h4>Akte Berufsschulpflichtüberwachung</h4>
+            <p>Die Akte der Stadt Dresden ab Februar 2026 bezüglich der Androhung von 25.000 EUR Zwangsgeld oder Ersatzwangshaft.</p>
+            <div style="font-size: 0.8rem; color: var(--text-muted); font-style: italic; margin-top: auto;">Details in der Chronologie (Abschnitt G) enthalten.</div>
         </div>
     </div>
     """
@@ -393,22 +423,40 @@ def build():
             </div>
         </div>
         <div class="doc-item-card">
-            <span class="doc-category">Court Records</span>
-            <h4>Federal Constitutional Court Decision (1 BvR 242/26)</h4>
-            <p>The final domestic decision by the Federal Constitutional Court rejecting the complaint without reasoning.</p>
-            <div style="font-size: 0.8rem; color: var(--text-muted); font-style: italic; margin-top: auto;">Details included in the timeline (Milestone F).</div>
+            <span class="doc-category">Analyses</span>
+            <h4>Development & Performance Analysis</h4>
+            <p>Comparison and detailed analysis of academic performance development from Class 7 to the 2026 graduation (redacted, German).</p>
+            <div class="doc-actions">
+                <a href="https://github.com/henry1986/rechtlicheAuseinandersetzung-web/blob/main/content/zeugnisvergleich_entwicklung.md" target="_blank" class="doc-btn">GitHub-View</a>
+                <a href="content/zeugnisvergleich_entwicklung.md" target="_blank" class="doc-btn secondary">Raw Markdown (.md)</a>
+            </div>
+        </div>
+        <div class="doc-item-card">
+            <span class="doc-category">Evidence</span>
+            <h4>Annual Report Card Class 7b (2022/2023)</h4>
+            <p>Report card from the 25th Secondary School Dresden prior to performance collapse (GPA 3.91, demotion to Hauptschul-track, redacted, German).</p>
+            <div class="doc-actions">
+                <a href="https://github.com/henry1986/rechtlicheAuseinandersetzung-web/blob/main/content/zeugnis_klasse_7b.md" target="_blank" class="doc-btn">GitHub-View</a>
+                <a href="content/zeugnis_klasse_7b.md" target="_blank" class="doc-btn secondary">Raw Markdown (.md)</a>
+            </div>
+        </div>
+        <div class="doc-item-card">
+            <span class="doc-category">Evidence</span>
+            <h4>Annual Report Card Class 8b (2023/2024)</h4>
+            <p>Report card from the 25th Secondary School Dresden after school absence began, showing 96 unexcused absences (GPA 5.23, redacted, German).</p>
+            <div class="doc-actions">
+                <a href="https://github.com/henry1986/rechtlicheAuseinandersetzung-web/blob/main/content/zeugnis_klasse_8b.md" target="_blank" class="doc-btn">GitHub-View</a>
+                <a href="content/zeugnis_klasse_8b.md" target="_blank" class="doc-btn secondary">Raw Markdown (.md)</a>
+            </div>
         </div>
         <div class="doc-item-card">
             <span class="doc-category">Evidence</span>
             <h4>Graduation Certificate (Realschulabschluss)</h4>
-            <p>The official state certificate successfully obtained on June 26, 2026, within regular school time (GPA 2.71).</p>
-            <div style="font-size: 0.8rem; color: var(--text-muted); font-style: italic; margin-top: auto;">Details included in the timeline (Milestone C).</div>
-        </div>
-        <div class="doc-item-card">
-            <span class="doc-category">Administrative Records</span>
-            <h4>Vocational School Monitoring & Coercion Case File</h4>
-            <p>The Dresden administration file threatening EUR 25,000 in coercive fines or detention.</p>
-            <div style="font-size: 0.8rem; color: var(--text-muted); font-style: italic; margin-top: auto;">Details included in the timeline (Milestone G).</div>
+            <p>State certificate successfully obtained on June 26, 2026, within regular school time (GPA 2.71, redacted, German).</p>
+            <div class="doc-actions">
+                <a href="https://github.com/henry1986/rechtlicheAuseinandersetzung-web/blob/main/content/zeugnis_realschulabschluss.md" target="_blank" class="doc-btn">GitHub-View</a>
+                <a href="content/zeugnis_realschulabschluss.md" target="_blank" class="doc-btn secondary">Raw Markdown (.md)</a>
+            </div>
         </div>
         <div class="doc-item-card">
             <span class="doc-category">Transparency disclosures</span>
@@ -418,6 +466,18 @@ def build():
                 <a href="https://github.com/henry1986/rechtlicheAuseinandersetzung-web/blob/main/content/transparenzbescheid_de.md" target="_blank" class="doc-btn">GitHub-View</a>
                 <a href="content/transparenzbescheid_de.md" target="_blank" class="doc-btn secondary">Raw Markdown (.md)</a>
             </div>
+        </div>
+        <div class="doc-item-card">
+            <span class="doc-category">Court Records</span>
+            <h4>Federal Constitutional Court Decision (1 BvR 242/26)</h4>
+            <p>The final domestic decision by the Federal Constitutional Court rejecting the complaint without reasoning.</p>
+            <div style="font-size: 0.8rem; color: var(--text-muted); font-style: italic; margin-top: auto;">Details included in the timeline (Milestone F).</div>
+        </div>
+        <div class="doc-item-card">
+            <span class="doc-category">Administrative Records</span>
+            <h4>Vocational School Monitoring & Coercion Case File</h4>
+            <p>The Dresden administration file threatening EUR 25,000 in coercive fines or detention.</p>
+            <div style="font-size: 0.8rem; color: var(--text-muted); font-style: italic; margin-top: auto;">Details included in the timeline (Milestone G).</div>
         </div>
     </div>
     """
