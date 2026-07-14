@@ -15,7 +15,7 @@
 
 ## 1. Vergleichende Notentabelle
 
-Die folgende Tabelle vergleicht die Noten aus dem [Jahreszeugnis der Klasse 7b](../transkripte/Zeugnis_Klasse_7b_L. Heinrich_Heinrich.md) (staatliche Oberschule), dem [Jahreszeugnis der Klasse 8b](../transkripte/Zeugnis_Klasse_8b_L. Heinrich_Heinrich.md) (staatliche Oberschule nach Beginn der Schulverweigerung) und dem [Realschulabschlusszeugnis für Schulfremde](../transkripte/Realschulabschlusszeugnis_L. Heinrich_Heinrich.md) (nach häuslichem Selbststudium).
+Die folgende Tabelle vergleicht die Noten aus dem [Jahreszeugnis der Klasse 7b](../transkripte/Zeugnis_Klasse_7b_L. Heinrich_Heinrich.md) (staatliche Oberschule), dem [Jahreszeugnis der Klasse 8b](../transkripte/Zeugnis_Klasse_8b_L. Heinrich_Heinrich.md) (staatliche Oberschule nach Beginn der Schulverweigerung) und dem [Realschulabschlusszeugnis für Schulfremde](../transkripte/Realschulabschlusszeugnis_L. Heinrich_Heinrich.md) (nach häuslichem Selbststudium) für alle Fächer, die Gegenstand der staatlichen Abschlussprüfung waren.
 
 | Schulfach | Klasse 7b (2022/2023)<br>Oberschule (Realschulzweig) | Klasse 8b (2023/2024)<br>Oberschule (Hauptschulzweig) | Realschulabschluss (2026)<br>Schulfremdenprüfung | Leistungsentwicklung / Tendenz |
 | :--- | :---: | :---: | :---: | :--- |
@@ -26,17 +26,11 @@ Die folgende Tabelle vergleicht die Noten aus dem [Jahreszeugnis der Klasse 7b](
 | **Physik** | 4 | 5 | 2 | **Starke Verbesserung** (Leistungssteigerung um 3 Notenstufen zu Klasse 8) |
 | **Chemie** | — | 6 | 2 | **Starke Verbesserung** (Leistungssteigerung um 4 Notenstufen zu Klasse 8) |
 | **Biologie** | 5 | 6 | 3 | **Deutliche Verbesserung** (Leistungssteigerung um 3 Notenstufen zu Klasse 8) |
-| **Geschichte** | 2 | 4 | — | Nicht in der Schulfremdenprüfung geprüft |
-| **Geographie** | 3 | 5 | — | Nicht in der Schulfremdenprüfung geprüft |
-| **Ethik / Religion** | 4 | 5 | — | Nicht in der Schulfremdenprüfung geprüft |
-| **Kunst** | 4 | 5 | — | Nicht in der Schulfremdenprüfung geprüft |
-| **Musik** | 4 | 6 | — | Nicht in der Schulfremdenprüfung geprüft |
-| **Sport** | 5 | 6 | — | Nicht in der Schulfremdenprüfung geprüft |
-| **WTH (Wirtschaft-Technik-H.)** | 5 | 5 | — | Nicht in der Schulfremdenprüfung geprüft |
-| **Informatik** | 2 | 5 | — | Nicht in der Schulfremdenprüfung geprüft |
-| **Notenschnitt (Ø)** | **3,91** (11 Fächer) | **5,23** (13 Fächer) | **2,71** (7 Fächer) | **Signifikante Steigerung der Gesamtleistung** |
+| **Notenschnitt (Ø)** | **3,91** (Gesamt) | **5,23** (Gesamt) | **2,71** (Gesamt) | **Signifikante Steigerung der Gesamtleistung** |
 
-*Hinweis zur Notenskala: 1 = sehr gut; 2 = gut; 3 = befriedigend; 4 = ausreichend; 5 = mangelhaft; 6 = ungenügend.*
+*Hinweise:*
+* *Notenskala: 1 = sehr gut bis 6 = ungenügend.*
+* *Nebenfächer (Geschichte, Geographie, Ethik, Kunst, Musik, Sport, WTH und Informatik), die in der staatlichen Schule ebenfalls stark einbrachen, waren nicht Gegenstand der Schulfremdenprüfung und wurden zur besseren Übersichtlichkeit aus dieser Tabelle weggelassen (die vollständigen Noten sind in den Einzeltranskripten einsehbar).*
 
 ---
 
