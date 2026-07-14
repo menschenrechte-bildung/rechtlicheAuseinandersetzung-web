@@ -278,7 +278,13 @@ def build():
             "documents_title": "Verzeichnis der Dokumente und Transkripte",
             "documents_desc": "Transkriptionen aller relevanten Urkunden, Bescheide und Gerichtsentscheidungen im Volltext.",
             "timeline_hint": "Klicke auf die Milestones, um die Details anzuzeigen:",
-            "conclusion_title": "Schluss: Eine neuartige Frage zur Konvention und Anträge"
+            "conclusion_title": "Schluss: Eine neuartige Frage zur Konvention und Anträge",
+            "next_to_facts": "Weiter zur Chronologie",
+            "next_to_legal": "Weiter zur Begründung",
+            "next_to_documents": "Weiter zu den Dokumenten",
+            "back_to_overview": "Zurück zur Übersicht",
+            "back_to_facts": "Zurück zur Chronologie",
+            "back_to_legal": "Zurück zur Begründung"
         },
         "en": {
             "meta_title": "ECHR Application: Martin & Lucas Heinrich v. Germany",
@@ -299,7 +305,13 @@ def build():
             "documents_title": "Index of Documents and Transcripts",
             "documents_desc": "Full-text transcripts of all relevant decisions, notices, and court records.",
             "timeline_hint": "Click on the milestones to view the details:",
-            "conclusion_title": "Conclusion: A Novel Convention Question and Relief Sought"
+            "conclusion_title": "Conclusion: A Novel Convention Question and Relief Sought",
+            "next_to_facts": "Next to Timeline",
+            "next_to_legal": "Next to Legal Arguments",
+            "next_to_documents": "Next to Documents",
+            "back_to_overview": "Back to Overview",
+            "back_to_facts": "Back to Timeline",
+            "back_to_legal": "Back to Legal Arguments"
         }
     }
     

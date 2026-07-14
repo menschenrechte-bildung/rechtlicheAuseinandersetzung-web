@@ -203,6 +203,57 @@
             box-shadow: 0 4px 15px var(--primary-glow);
         }
 
+        /* Tab Navigation Buttons */
+        .tab-navigation {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .tab-navigation.space-between {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .nav-btn {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border: none;
+            color: #ffffff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 12px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .nav-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(99, 102, 241, 0.5);
+        }
+
+        .nav-btn.secondary {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-main);
+            box-shadow: none;
+        }
+
+        .nav-btn.secondary:hover {
+            background: rgba(99, 102, 241, 0.1);
+            border-color: var(--primary);
+            transform: translateY(-2px);
+        }
+
         @media (max-width: 480px) {
             .tabs-nav {
                 flex-wrap: wrap;
@@ -710,12 +761,15 @@
             document.getElementById(tabId).classList.add('active');
             if (event) {
                 event.currentTarget.classList.add('active');
+            } else {
+                const btn = Array.from(document.querySelectorAll('.tab-btn')).find(b => b.getAttribute('onclick') && b.getAttribute('onclick').includes(tabId));
+                if (btn) {
+                    btn.classList.add('active');
+                }
             }
             
-            // Re-render timeline if it was opened
-            if (tabId === 'facts-tab') {
-                // Focus scroll
-            }
+            // Smooth scroll to top of page/content
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         // Toggle Legal Accordion
@@ -886,6 +940,15 @@
 <p>As a direct consequence of this systemic vacuum, the applicant was trapped in an unavoidable conflict of duties (<em>Pflichtenkollision</em>). Because every administrative, judicial, and private avenue for relief was demonstrably blocked—the school supervisory authority refusing assistance, the courts offering no timely or admissible remedy, and private schools being saturated—the applicant faced a binary choice: either enforce the physical attendance obligation by forcing his child back into an environment that actively endangered his well-being, development, and academic prospects, or fulfill his primary parental duty of care under Article 8 of the Convention and national civil law (§ 1666 BGB) by advising his child to study at home and supporting his subsequent decision to remain absent for self-protection, thereby securing his education through home-study. Under these extreme circumstances, advising the child and supporting his decision to avoid the harmful school environment was not an act of civil disobedience, but the absolute <em>ultima ratio</em>—the sole remaining path to protect the child's right to education. The empirical success of this choice is documented by the state's own graduation certificate (see Annex 24, p. 120-122). Furthermore, the child's successful social and civic integration is evidenced by his voluntary enlistment in the German Federal Armed Forces (<em>Bundeswehr</em>) for Voluntary Military Service starting in September 2026, demonstrating a profound commitment to defend the democratic state. Yet, the State continues to prosecute the applicant, threatening him with a coercive fine of up to EUR 25,000 or coercive detention (see Annex 17, p. 95-96 and Annex 22, p. 107-115). This case, therefore, far transcends a minor administrative dispute over a nominal fine; it represents a continuous, existence-threatening cycle of state coercion designed to financially ruin and psychologically exhaust the applicant. He is thus penalized for successfully resolving a conflict of duties that the State itself created and refused to remedy.</p>
 <hr class="divider"/>
                 </div>
+
+                <div class="tab-navigation">
+                    <button class="nav-btn" onclick="switchTab(null, 'facts-tab')">
+                        <span>Next to Timeline</span>
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                </div>
             </div>
 
             <!-- Tab 2: Chronology -->
@@ -898,6 +961,21 @@
                     <div class="timeline-container" id="timeline-list">
                         <!-- Loaded dynamically -->
                     </div>
+                </div>
+
+                <div class="tab-navigation space-between">
+                    <button class="nav-btn secondary" onclick="switchTab(null, 'overview-tab')">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                        <span>Back to Overview</span>
+                    </button>
+                    <button class="nav-btn" onclick="switchTab(null, 'legal-tab')">
+                        <span>Next to Legal Arguments</span>
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
                 </div>
             </div>
 
@@ -1075,6 +1153,21 @@
 <p><strong>Martin Heinrich</strong></p>
 <p>Dresden, 14 July 2026</p>
                 </div>
+
+                <div class="tab-navigation space-between">
+                    <button class="nav-btn secondary" onclick="switchTab(null, 'facts-tab')">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                        <span>Back to Timeline</span>
+                    </button>
+                    <button class="nav-btn" onclick="switchTab(null, 'documents-tab')">
+                        <span>Next to Documents</span>
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                </div>
             </div>
 
             <!-- Tab 4: Documents list -->
@@ -1123,6 +1216,15 @@
         </div>
     </div>
     
+                </div>
+
+                <div class="tab-navigation">
+                    <button class="nav-btn secondary" onclick="switchTab(null, 'legal-tab')">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                        <span>Back to Legal Arguments</span>
+                    </button>
                 </div>
             </div>
         </div>

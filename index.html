@@ -203,6 +203,57 @@
             box-shadow: 0 4px 15px var(--primary-glow);
         }
 
+        /* Tab Navigation Buttons */
+        .tab-navigation {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .tab-navigation.space-between {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .nav-btn {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border: none;
+            color: #ffffff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 12px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .nav-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(99, 102, 241, 0.5);
+        }
+
+        .nav-btn.secondary {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-main);
+            box-shadow: none;
+        }
+
+        .nav-btn.secondary:hover {
+            background: rgba(99, 102, 241, 0.1);
+            border-color: var(--primary);
+            transform: translateY(-2px);
+        }
+
         @media (max-width: 480px) {
             .tabs-nav {
                 flex-wrap: wrap;
@@ -710,12 +761,15 @@
             document.getElementById(tabId).classList.add('active');
             if (event) {
                 event.currentTarget.classList.add('active');
+            } else {
+                const btn = Array.from(document.querySelectorAll('.tab-btn')).find(b => b.getAttribute('onclick') && b.getAttribute('onclick').includes(tabId));
+                if (btn) {
+                    btn.classList.add('active');
+                }
             }
             
-            // Re-render timeline if it was opened
-            if (tabId === 'facts-tab') {
-                // Focus scroll
-            }
+            // Smooth scroll to top of page/content
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         // Toggle Legal Accordion
@@ -886,6 +940,15 @@
 <p>Als direkte Folge dieses systemischen Vakuums war der Beschwerdeführer in einer unvermeidbaren Pflichtenkollision gefangen. Weil jeder administrative, gerichtliche und private Hilfeweg nachweislich versperrt war – die Schulaufsicht verweigerte ihre Unterstützung, die Gerichte boten keinen zeitnahen oder zulässigen Rechtsbehelf und die freien Schulen waren kapazitär erschöpft –, stand der Beschwerdeführer vor einer binären Entscheidung: Entweder den physischen Anwesenheitszwang durchzusetzen und sein Kind in eine Umgebung zu zwingen, die sein Wohlbefinden, seine Entwicklung und seine schulischen Aussichten aktiv gefährdete, oder seine primäre elterliche Fürsorgepflicht unter Artikel 8 der Konvention und dem nationalen Zivilrecht (§ 1666 BGB) zu erfüllen, indem er seinem Kind riet, zu Hause zu lernen, und dessen darauffolgende Entscheidung, zum Selbstschutz fernzubleiben, unterstützte, um so seine Bildung durch häusliches Selbststudium zu sichern. Unter diesen extremen Umständen war das Raten und die Unterstützung des Kindes, die schädliche Schulumgebung zu meiden, kein Akt des zivilen Ungehorsams, sondern die absolute <em>Ultima Ratio</em> – der einzig verbliebene Weg, das Recht des Kindes auf Bildung zu schützen. Der empirische Erfolg dieser Entscheidung ist durch das staatliche Abschlusszeugnis des Sohnes dokumentiert (siehe Anlage 24, S. 120-122). Zudem wird die erfolgreiche soziale und gesellschaftliche Integration des Kindes durch seine freiwillige Bewerbung und anstehende Aufnahme in den Freiwilligen Wehrdienst der Bundeswehr ab September 2026 belegt, womit er seine Bereitschaft demonstriert, dem demokratischen Staat zu dienen und diesen zu verteidigen. Dennoch verfolgt der Staat den Beschwerdeführer weiterhin und droht ihm mit einem Zwangsgeld von bis zu 25.000 EUR oder Ersatzzwangshaft (siehe Anlage 17, S. 95–96 und Anlage 22, S. 107–115). Dieser Fall geht daher weit über eine geringfügige Verwaltungsstreitigkeit über ein nominelles Bußgeld hinaus; er stellt eine fortlaufende, existenzbedrohende Spirale staatlichen Zwangs dar, die darauf abzielt, den Beschwerdeführer finanziell zu ruinieren und psychisch zu zermürben. Er wird somit dafür bestraft, dass er eine Pflichtenkollision erfolgreich gelöst hat, die der Staat selbst geschaffen und zu beheben verweigert hat.</p>
 <hr class="divider"/>
                 </div>
+
+                <div class="tab-navigation">
+                    <button class="nav-btn" onclick="switchTab(null, 'facts-tab')">
+                        <span>Weiter zur Chronologie</span>
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                </div>
             </div>
 
             <!-- Tab 2: Chronology -->
@@ -898,6 +961,21 @@
                     <div class="timeline-container" id="timeline-list">
                         <!-- Loaded dynamically -->
                     </div>
+                </div>
+
+                <div class="tab-navigation space-between">
+                    <button class="nav-btn secondary" onclick="switchTab(null, 'overview-tab')">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                        <span>Zurück zur Übersicht</span>
+                    </button>
+                    <button class="nav-btn" onclick="switchTab(null, 'legal-tab')">
+                        <span>Weiter zur Begründung</span>
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
                 </div>
             </div>
 
@@ -1075,6 +1153,21 @@
 <p><strong>Martin Heinrich</strong></p>
 <p>Dresden, 14. Juli 2026</p>
                 </div>
+
+                <div class="tab-navigation space-between">
+                    <button class="nav-btn secondary" onclick="switchTab(null, 'facts-tab')">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                        <span>Zurück zur Chronologie</span>
+                    </button>
+                    <button class="nav-btn" onclick="switchTab(null, 'documents-tab')">
+                        <span>Weiter zu den Dokumenten</span>
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                </div>
             </div>
 
             <!-- Tab 4: Documents list -->
@@ -1123,6 +1216,15 @@
         </div>
     </div>
     
+                </div>
+
+                <div class="tab-navigation">
+                    <button class="nav-btn secondary" onclick="switchTab(null, 'legal-tab')">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                        <span>Zurück zur Begründung</span>
+                    </button>
                 </div>
             </div>
         </div>

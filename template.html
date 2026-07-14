@@ -201,6 +201,57 @@
             box-shadow: 0 4px 15px var(--primary-glow);
         }
 
+        /* Tab Navigation Buttons */
+        .tab-navigation {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .tab-navigation.space-between {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .nav-btn {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border: none;
+            color: #ffffff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 12px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .nav-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(99, 102, 241, 0.5);
+        }
+
+        .nav-btn.secondary {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-main);
+            box-shadow: none;
+        }
+
+        .nav-btn.secondary:hover {
+            background: rgba(99, 102, 241, 0.1);
+            border-color: var(--primary);
+            transform: translateY(-2px);
+        }
+
         @media (max-width: 480px) {
             .tabs-nav {
                 flex-wrap: wrap;
@@ -708,12 +759,15 @@
             document.getElementById(tabId).classList.add('active');
             if (event) {
                 event.currentTarget.classList.add('active');
+            } else {
+                const btn = Array.from(document.querySelectorAll('.tab-btn')).find(b => b.getAttribute('onclick') && b.getAttribute('onclick').includes(tabId));
+                if (btn) {
+                    btn.classList.add('active');
+                }
             }
             
-            // Re-render timeline if it was opened
-            if (tabId === 'facts-tab') {
-                // Focus scroll
-            }
+            // Smooth scroll to top of page/content
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         // Toggle Legal Accordion
@@ -837,6 +891,15 @@
                     <h2>{{preliminary_title}}</h2>
                     {{preliminary_remark_content}}
                 </div>
+
+                <div class="tab-navigation">
+                    <button class="nav-btn" onclick="switchTab(null, 'facts-tab')">
+                        <span>{{next_to_facts}}</span>
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                </div>
             </div>
 
             <!-- Tab 2: Chronology -->
@@ -849,6 +912,21 @@
                     <div class="timeline-container" id="timeline-list">
                         <!-- Loaded dynamically -->
                     </div>
+                </div>
+
+                <div class="tab-navigation space-between">
+                    <button class="nav-btn secondary" onclick="switchTab(null, 'overview-tab')">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                        <span>{{back_to_overview}}</span>
+                    </button>
+                    <button class="nav-btn" onclick="switchTab(null, 'legal-tab')">
+                        <span>{{next_to_legal}}</span>
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
                 </div>
             </div>
 
@@ -865,6 +943,21 @@
                     <h2>{{conclusion_title}}</h2>
                     {{conclusion_content}}
                 </div>
+
+                <div class="tab-navigation space-between">
+                    <button class="nav-btn secondary" onclick="switchTab(null, 'facts-tab')">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                        <span>{{back_to_facts}}</span>
+                    </button>
+                    <button class="nav-btn" onclick="switchTab(null, 'documents-tab')">
+                        <span>{{next_to_documents}}</span>
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                </div>
             </div>
 
             <!-- Tab 4: Documents list -->
@@ -874,6 +967,15 @@
                     <p style="color: var(--text-muted); margin-bottom: 1rem;">{{documents_desc}}</p>
                     
                     {{documents_content}}
+                </div>
+
+                <div class="tab-navigation">
+                    <button class="nav-btn secondary" onclick="switchTab(null, 'legal-tab')">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                        <span>{{back_to_legal}}</span>
+                    </button>
                 </div>
             </div>
         </div>
