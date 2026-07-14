@@ -132,6 +132,8 @@ def parse_zusatzschrift(filepath):
             sections["facts"] = parse_facts_subsections(content)
         elif "LEGAL ARGUMENTS" in heading_upper or "RECHTLICHE BEGRÜNDUNG" in heading_upper:
             sections["legal_arguments"] = parse_legal_subsections(content)
+        elif "CONCLUSION" in heading_upper or "SCHLUSS" in heading_upper:
+            sections["conclusion"] = md_to_html(content)
             
     return sections
 
@@ -275,7 +277,8 @@ def build():
             "legal_desc": "Die Beschwerde richtet sich nicht gegen die Schulpflicht an sich, sondern gegen das Fehlen von konventionsrechtlichen Mindestgarantien bei der staatlichen Zwangsverbüßung.",
             "documents_title": "Verzeichnis der Dokumente und Transkripte",
             "documents_desc": "Transkriptionen aller relevanten Urkunden, Bescheide und Gerichtsentscheidungen im Volltext.",
-            "timeline_hint": "Klicke auf die Milestones, um die Details anzuzeigen:"
+            "timeline_hint": "Klicke auf die Milestones, um die Details anzuzeigen:",
+            "conclusion_title": "Schluss: Eine neuartige Frage zur Konvention und Anträge"
         },
         "en": {
             "meta_title": "ECHR Application: Martin & Lucas Heinrich v. Germany",
@@ -295,7 +298,8 @@ def build():
             "legal_desc": "The complaints do not challenge compulsory schooling as such, but rather the lack of minimum safeguards when enforced through State coercion.",
             "documents_title": "Index of Documents and Transcripts",
             "documents_desc": "Full-text transcripts of all relevant decisions, notices, and court records.",
-            "timeline_hint": "Click on the milestones to view the details:"
+            "timeline_hint": "Click on the milestones to view the details:",
+            "conclusion_title": "Conclusion: A Novel Convention Question and Relief Sought"
         }
     }
     
@@ -443,6 +447,7 @@ def build():
         # Parse inline templates
         output = output.replace("{{introduction_content}}", data["introduction"])
         output = output.replace("{{preliminary_remark_content}}", data["preliminary_remark"])
+        output = output.replace("{{conclusion_content}}", data.get("conclusion", ""))
         
         # Write file
         filename = "index.html" if lang == "de" else f"index_{lang}.html"

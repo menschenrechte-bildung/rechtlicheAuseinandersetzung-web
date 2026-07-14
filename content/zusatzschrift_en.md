@@ -12,7 +12,7 @@
 2.  **PRELIMINARY REMARK: THE TRIPARTITE RELATIONSHIP AND THE SYSTEMIC RIGHTS VACUUM**
 3.  **I. DETAILED STATEMENT OF THE FACTS**
 4.  **II. LEGAL ARGUMENTS AND ALLEGED VIOLATIONS**
-5.  **III. CONCLUSION AND RELIEF SOUGHT** *(To be added)*
+5.  **III. CONCLUSION AND RELIEF SOUGHT**
 
 ---
 
@@ -41,7 +41,7 @@ As a direct consequence of this systemic vacuum, the applicant was trapped in an
 ## I. DETAILED STATEMENT OF THE FACTS
 
 ### A. Background and Incidents at the Public School
-1. The applicant, Martin Heinrich, is the single father of Lucas Heinrich (born 2009). They reside in Dresden. Lucas attended the public 25th Secondary School (*Oberschule*) in Dresden until December 2023.
+1. The applicant, Martin Heinrich, is the single father of Lucas Heinrich (born 05.01.2009). They reside in Dresden. Lucas attended the public 25th Secondary School (*Oberschule*) in Dresden until December 2023.
 2. During his primary school education (second grade), Lucas experienced pedagogical abuse when a teacher publicly emptied his schoolbag in front of the entire class to confiscate a mobile phone (see **Annex 6, p. 16**). The applicant’s complaint to the primary school's headmistress remained ineffective. Later, during the 2022/2023 school year at the 25th Secondary School, Lucas’s academic performance collapsed to a Grade Point Average (GPA) of 3.91, resulting in severe school anxiety and a forced transfer to the lower-tier *Hauptschulbildungsgang* (see **Annex 2, p. 3** and **Annex 4, p. 10**).
 3. In the autumn and winter of 2023 (Class 8b), further incidents occurred. During a biology test, Lucas was prohibited from using the restroom (see **Annex 6, p. 17**). In January 2023, during a freezing period, the school heating was turned down. Lucas was ordered to remove his jacket in the classroom. Upon refusal due to physical discomfort, he was excluded from the lesson and forced to sit in the cold hallway (see **Annex 6, p. 17**).
 4. Following these incidents, the applicant advised his son to study at home. Lucas autonomously decided to stop entering the school building on 18.12.2023 (see **Annex 4, p. 10**). The applicant did not physically block his son from school and would have provided all necessary resources had Lucas chosen to attend. 
@@ -53,7 +53,20 @@ As a direct consequence of this systemic vacuum, the applicant was trapped in an
 ### C. Private Educational Measures and Academic Outcomes
 7. The applicant applied for Lucas’s admission at several private alternative schools (e.g., Montessori and the Dresden University School). All applications were rejected due to capacity exhaustion, with regional waiting lists exceeding 600 applicants (see **Annex 14, p. 79-80**). The Free State of Saxony provided no placement system for private schools.
 8. Lucas subsequently studied autodidactically at home under the applicant’s guidance. 
-9. On 26.06.2026, Lucas successfully passed the official state examination for external candidates (*Schulfremdenprüfung*) at the 46th Secondary School Dresden. He obtained his middle-school graduation certificate (*Realschulabschluss*) with a GPA of 2.71, including the grade "1" (excellent) in social studies/law and "2" (good) in physics and chemistry (see **Annex 24, p. 120-122**).
+9. On 26.06.2026, Lucas successfully passed the official state examination for external candidates (*Schulfremdenprüfung*) at the 46th Secondary School Dresden. He obtained his middle-school graduation certificate (*Realschulabschluss*) with a GPA of 2.71, including the grade "1" (excellent) in social studies/law and "2" (good) in physics and chemistry (see **Annex 24, p. 120-122**). This represented a major academic rehabilitation, reversing a collapse in performance under the state school's coercive environment (where his GPA dropped to 3.91 in Class 7b, leading to a forced demotion to the lower-tier *Hauptschulbildungsgang* in Class 8b where it further collapsed to 5.23; see **Annex 2, p. 3** and **Annex 4, p. 10**). This academic progress is illustrated by the comparison of his grades (see **Annex 2**, **Annex 4**, and **Annex 24**):
+
+   | Subject | Class 7b (2022/23)<br>Oberschule (Realschul-track) | Class 8b (2023/24)<br>Oberschule (Hauptschul-track) | Realschulabschluss (2026)<br>External State Exam | Development |
+   | :--- | :---: | :---: | :---: | :--- |
+   | **German** | — | 5 | 4 | Passed on Realschul-level |
+   | **Mathematics** | 4 | — | 3 | Improved by 1 grade level |
+   | **English** | 5 | 5 | 4 | Improved by 1 grade level |
+   | **Social Studies / Law** | 5 | 6 | 1 | **Improvement of 5 grade levels** |
+   | **Physics** | 4 | 5 | 2 | **Improvement of 3 grade levels** |
+   | **Chemistry** | — | 6 | 2 | **Improvement of 4 grade levels** |
+   | **Biology** | 5 | 6 | 3 | **Improvement of 3 grade levels** |
+   | **Grade Point Average (GPA)** | **3.91** | **5.23** | **2.71** | **Significant overall rise** |
+
+   *(Note: German grading scale ranges from 1 [excellent] to 6 [insufficient]. Lucas completed the entire remaining curriculum of Classes 8 to 10 autodidactically in less than 2 years, graduating exactly on time with his repeated class cohort, demonstrating that no educational time was lost under home education.)*
 10. In the summer of 2026, Lucas successfully passed the physical and psychological selection tests and enlisted for Voluntary Military Service (*Freiwilliger Wehrdienst*) in the German Federal Armed Forces (*Bundeswehr*), scheduled to commence in September 2026.
 
 ### D. Administrative Sanctions and Domestic Court Proceedings
@@ -69,6 +82,7 @@ As a direct consequence of this systemic vacuum, the applicant was trapped in an
     - No mandatory cycle or plan for external evaluations exists;
     - Internal school evaluations are not accessible to the school supervisory authority;
     - The authority does not compile statistics regarding parental complaints about school quality (see **Annex 23, p. 116-119**).
+    - The Ministry actively distorted the statutory text of § 3a Paragraph 2 SächsSchulG in its response to legally insulate itself from its quality assurance duties. While the actual statute binds both "schools and school supervisory authorities" to regular quality evaluations, the Ministry selectively misquoted this as "schools are obliged...", deleting the school supervisory authorities from the quotation and asserting that this duty lies solely on individual schools (see **Annex 23, p. 117**).
 
 ### F. Exhaustion of Domestic Remedies
 17. On 05.01.2026, the applicant filed a constitutional complaint with the Federal Constitutional Court (*Bundesverfassungsgericht*), registered under case no. 1 BvR 242/26 (see **Annex 13, p. 49-74**).
@@ -77,7 +91,7 @@ As a direct consequence of this systemic vacuum, the applicant was trapped in an
 ### G. Ongoing Coercive Proceedings
 19. On 18.02.2026, the school board initiated monitoring of Lucas's compulsory vocational school attendance, demanding immediate enrollment (see **Annex 15, p. 83-85**).
 20. On 17.03.2026, the City of Dresden initiated new administrative fine and coercive fine (*Zwangsgeld*) proceedings, threatening a coercive fine of up to EUR 25,000 or coercive detention (see **Annex 17, p. 95-96**).
-21. To be admitted to the state *Schulfremdenprüfung* in June 2026, Lucas was legally required *not* to be enrolled at any school. Forcing school enrollment in March 2026 would have legally disqualified Lucas from taking the graduation exam.
+21. Forcing school enrollment in March 2026 created a destructive double-bind: first, without an active training contract, Lucas would have been placed in a Vocational Preparation Year (*Berufsvorbereitungsjahr* - BVJ) which, starting in March, made it legally and practically impossible to obtain any degree in 2026. Second, and most critically, to be admitted to the state *Schulfremdenprüfung* in June 2026, Lucas was legally required **not to be enrolled at any school**. The state's coercion to force school enrollment in March 2026 would have legally and automatically disqualified Lucas from taking the graduation exam. Thus, the father's refusal to comply with this administrative coercion was the *exclusive condition* that enabled Lucas to successfully take the exam and obtain his Realschulabschluss.
 
 ---
 
@@ -104,7 +118,7 @@ As a direct consequence of this systemic vacuum, the applicant was trapped in an
 
 ##### b) Application to the Present Case
 4. The respondent State has violated this right by completely suspending all regular external school evaluations since 2015 (see **Annex 23, p. 117**). By abandoning all mechanisms capable of verifying whether compulsory attendance still served its educational purpose, the respondent State continued to enforce attendance independently of any objective assessment of educational quality.
-5. The core violation consists of the State forcing the family to choose between the child's well-being and compulsory school attendance. When Lucas experienced pedagogical conflicts and school anxiety, the State offered no quality-assured alternative, and private replacement schools were unavailable due to regional capacity exhaustion (see **Annex 14, p. 79-80**). The enforcement of the attendance obligation through administrative fines and the threat of detention placed the applicant in a position where compliance with the school presence mandate directly conflicted with his parental duty to protect his child's development. Despite the child subsequently completing his education successfully through home-study (see **Annex 24, p. 120-122**), the State has continued to pursue enforcement proceedings against the applicant.
+5. The core violation consists of the State forcing the family to choose between the child's well-being and compulsory school attendance. When Lucas experienced pedagogical conflicts and school anxiety, the State offered no quality-assured alternative, and private replacement schools were unavailable due to regional capacity exhaustion (see **Annex 14, p. 79-80**). The enforcement of the attendance obligation through administrative fines and the threat of detention placed the applicant in a position where compliance with the school presence mandate directly conflicted with his parental duty to protect his child's development. This disconnect is further illustrated by the school's decision to formally promote Lucas to Class 9 despite 96 unexcused absences and failing grades, showing that enforcement is decoupled from actual education and serves merely as physical presence control (*Körperpräsenzpflicht*). Despite the child subsequently completing his education successfully through home-study (see **Annex 24, p. 120-122**), the State has continued to pursue enforcement proceedings against the applicant. The state is thus penalizing the father for choosing a home education path that was the *exclusive condition* for the child to achieve a higher graduation, while prosecuting him for refusing a state path that led to systemic academic downgrading and failure.
 
 #### 2. Violation of Article 8 of the Convention (Respect for Private and Family Life)
 
@@ -114,7 +128,7 @@ As a direct consequence of this systemic vacuum, the applicant was trapped in an
 ##### b) Application to the Present Case
 7. In Germany, school coercion is derived from the state's school supervision mandate under Article 7 Paragraph 1 of the Basic Law (GG). This mandate constitutes a positive constitutional duty to actively supervise schools. The systematic abandonment of statutory supervisory mechanisms (see **Annex 23, p. 117**) raises serious doubts as to whether the interference retained the quality of lawfulness required by Article 8 § 2.
 8. Under domestic law, the State assumes a positive duty to protect child welfare, intervening in domestic family settings under § 1666 BGB (see **Annex 14, p. 75**). However, the same protective standards are not applied within the public school system, where the domestic courts declare themselves incompetent to review school conditions, and the supervisory authorities do not intervene to address reported abuses (see **Annex 14, p. 75-76**).
-9. Under these circumstances, the continuation of coercive measures—specifically the threat of a EUR 25,000 fine or detention—cannot be considered "necessary in a democratic society". The socialization and civic integration of the child have been demonstrated by his subsequent voluntary enlistment in the German Federal Armed Forces (*Bundeswehr*) (see **Annex 24**). The imposition of severe financial and custodial sanctions against the father under these conditions exceeds what is required to achieve the legitimate educational aims of the State.
+9. Under these circumstances, the continuation of coercive measures—specifically the threat of a EUR 25,000 fine or detention—cannot be considered "necessary in a democratic society". The socialization and civic integration of the child have been demonstrated by his subsequent voluntary enlistment in the German Federal Armed Forces (*Bundeswehr*) (see **Annex 24**). Furthermore, the state's ongoing practice of cumulative administrative attrition (parallel proceedings regarding vocational school monitoring, administrative fines, and coercive fines) against a single father, continuing even after the child successfully graduated on time, exceeds any legitimate public interest in compliance. It constitutes a form of systemic harassment targeting the financial ruin and psychological exhaustion of the applicant, violating the core of the right to family life under Article 8.
 
 #### 3. Violation of Article 10 of the Convention (Freedom of Expression)
 
@@ -122,7 +136,7 @@ As a direct consequence of this systemic vacuum, the applicant was trapped in an
 10. Article 10 protects the right to impart and receive information and ideas without interference by public authority. This protection extends to private consultations and advice within the family unit, especially regarding decisions that directly affect the child's development and well-being.
 
 ##### b) Application to the Present Case
-11. The applicant was convicted by the Local Court Dresden explicitly for the content of his private communication with his son (see **Annex 6, p. 15, 19**). The court treated the applicant's honest advice to Lucas—that home-study was the superior option to protect his development under the school's harmful conditions—as proof of criminal intent. Penalizing a father for imparting factual assessments and honest parental guidance to his child violates Article 10.
+11. The applicant was convicted by the Local Court Dresden explicitly for the content of his private communication with his son (see **Annex 6, p. 15, 19**). The court treated the applicant's honest advice to Lucas—that home-study was the superior option to protect his development under the school's harmful conditions—as proof of criminal intent. Voicing this assessment and giving parental guidance does not constitute an illegal withdrawal, but rather a legitimate exercise of parental care. By threat of sanction, the state effectively demands that parents act as compliant state agents, forcing them to suppress their honest, factual assessments. Penalizing a father for speaking the truth to his child, especially when that truth is empirically verified by the child's subsequent academic success, is a form of forced communication that violates the core of Article 10.
 
 #### 4. Violation of Article 6 § 1 & Article 8 of the Convention (Procedural Rights)
 
@@ -131,7 +145,7 @@ As a direct consequence of this systemic vacuum, the applicant was trapped in an
 
 ##### b) Application to the Present Case
 13. Throughout the domestic proceedings, the courts refused to hear Lucas (who was 15 years old during the trial and 16 during the appeal) or to allow him to express his views. The Higher Regional Court (*OLG*) Dresden adopted the written submission of the General Prosecutor's Office (*GStA*) Dresden without modification, which explicitly declared that the minor’s perspective was "not decisive" (*nicht maßgebend*) for the enforcement of school attendance (see **Annex 9, p. 34** and **Annex 11, p. 39-40**). The core violation is not merely that the child was not heard, but that the court explicitly ruled that his view was legally meaningless.
-14. Furthermore, the domestic courts did not address the substance of the applicant's factual submissions regarding the school abuses. The Local Court Dresden declared the school's deficiencies "legally irrelevant" to the attendance obligation (see **Annex 6, p. 19**), the Higher Regional Court dismissed the appeal without examining the merits (see **Annex 11, p. 40**), and the Federal Constitutional Court declined to accept the complaint without statement of reasons (see **Annex 19, p. 100-101**). By treating the documented safety and pedagogical failures as legally irrelevant, the domestic courts failed to examine the core of the applicant's defense, thereby violating the requirement of a fair hearing.
+14. Furthermore, the domestic courts did not address the substance of the applicant's factual submissions regarding the school abuses. The Local Court Dresden declared the school's deficiencies "legally irrelevant" to the attendance obligation (see **Annex 6, p. 19**). The Higher Regional Court dismissed the appeal with a formalistic remark that the applicant failed to take Article 7 GG (state school supervision) into account, using this article to justify state coercion while refusing to address the fundamental contradiction that the state itself had abandoned its supervisory duties by suspending evaluations since 2015 (see **Annex 11, p. 40**). The Federal Constitutional Court declined to accept the complaint without statement of reasons (see **Annex 19, p. 100-101**). By treating these documented failures as legally irrelevant, the domestic courts failed to examine the core of the applicant's defense, thereby violating the requirement of a fair hearing.
 
 #### 5. Violation of Article 13 of the Convention (Right to an Effective Remedy)
 
@@ -140,4 +154,32 @@ As a direct consequence of this systemic vacuum, the applicant was trapped in an
 
 ##### b) Application to the Present Case
 16. The State provides no independent, low-threshold complaint mechanism for parents or, particularly, for minor children. The school supervisory authority (LASUB) acts as both the operator and the supervisor of the public schools, creating an inherent conflict of interest. When the applicant petitioned the authority, it actively shielded the school and rejected the complaints (see **Annex 1, p. 1-2** and **Annex 3, p. 8-9**).
-17. The judicial system offers only a circular remedy trap. Under German administrative court practice (*Schutznormtheorie*), parents and students lack standing to sue for compliance with school quality standards, as these are classified as non-justiciable "programmatic principles" (see **Annex 14, p. 77**). Administrative lawsuits take between 1.5 and 3 years, ensuring that cases are routinely dismissed as moot (*Erledigung*) once the school year ends. Meanwhile, in the repressive enforcement proceedings, the courts declare the school’s failures "legally irrelevant" (see **Annex 6, p. 19**). This circular referral insulates the executive's illegal practice from any judicial review.
+17. The judicial system offers only a circular remedy trap. Under German administrative court practice (*Schutznormtheorie*), parents and students lack standing to sue for compliance with school quality standards, as these are classified as non-justiciable "programmatic principles" (see **Annex 14, p. 77**). Even if standing were granted, suing the state carries prohibitive financial risks, and legal aid (*Prozesskostenhilfe*) is systematically refused because such lawsuits are deemed to lack "prospects of success" under § 114 ZPO, creating a financial barrier to justice. Furthermore, administrative lawsuits take between 1.5 and 3 years, ensuring that cases are routinely dismissed as moot (*Erledigung*) once the school year ends. Meanwhile, in the repressive enforcement proceedings, the courts declare the school’s failures "legally irrelevant" (see **Annex 6, p. 19**). This circular referral insulates the executive's illegal practice from any judicial review.
+18. Finally, the state forces parents into an unreasonable requirement of prior compliance (*unzumutbare Vorleistungspflicht*): they must keep the child in the harmful, abusive environment for the entire duration of the slow administrative litigation, or face immediate fines and coercive detention. The lack of any immediate legal shield or temporary relief mechanism during litigation leaves families with no legal recourse to protect the child's safety, violating the very essence of Article 13.
+
+---
+
+## III. CONCLUSION AND RELIEF SOUGHT
+
+The present application does not challenge the principle of compulsory education. Rather, it challenges the absence of those minimum safeguards that render such state coercion compatible with the Convention.
+
+Heretofore, the Court has examined the compatibility of compulsory school attendance under the assumption that the domestic authorities fulfill their positive obligations of protection and quality assurance. The present case, for the first time, raises the fundamental question of which minimum safeguards must apply when a Contracting State actively abandons these protective mechanisms. 
+
+Accordingly, the present application invites the Court to clarify whether compulsory school attendance remains compatible with the Convention where the State simultaneously:
+*   abandons objective quality assurance,
+*   refuses to hear the minor child,
+*   provides no effective remedy against administrative abuses or educational failure, and
+*   nevertheless continues to enforce physical attendance through severe coercive measures.
+
+Consequently, the applicant respectfully requests the Court to:
+1.  **Declare the application admissible;**
+2.  **Find a violation** of Article 2 of Protocol No. 1, and Articles 6, 8, 10, and 13 of the Convention;
+3.  **Clarify the minimum positive obligations** incumbent upon Contracting States when enforcing compulsory education through a public education monopoly; and
+4.  **Award the applicant just satisfaction** under Article 41 of the Convention for non-pecuniary damage and costs incurred in the domestic and international proceedings.
+
+The question before the Court is therefore not whether a State may require children to attend school. It is whether a State that compels attendance may do so without ensuring that the institutions it forces children to attend remain subject to effective quality oversight, meaningful remedies, and respect for the rights of the child.
+
+Respectfully submitted,
+
+**Martin Heinrich**  
+Dresden, 14 July 2026
