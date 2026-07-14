@@ -286,7 +286,8 @@ def build():
             "back_to_facts": "Zurück zur Chronologie",
             "back_to_legal": "Zurück zur Begründung",
             "docs_contact_title": "Presseanfragen & Wissenschaftlicher Austausch",
-            "docs_contact_text": "Journalisten, Wissenschaftler und juristische Fachkreise können für den Zugang zu den ungeschwärzten Originaldokumenten und behördlichen Akten gerne eine persönliche Anfrage stellen. Da GitHub keine privaten Nachrichten unterstützt, kontaktieren Sie mich bitte direkt über die im GitHub-Profil hinterlegte E-Mail-Adresse."
+            "docs_contact_text": "Journalisten, Wissenschaftler und juristische Fachkreise können für den Zugang zu den ungeschwärzten Originaldokumenten und behördlichen Akten gerne eine persönliche Anfrage stellen. Da GitHub keine privaten Nachrichten unterstützt, kontaktieren Sie mich bitte direkt über die E-Mail-Adresse in meinem",
+            "docs_contact_link_text": "GitHub-Profil (henry1986)"
         },
         "en": {
             "meta_title": "ECHR Application: Martin Heinrich v. Germany",
@@ -315,7 +316,8 @@ def build():
             "back_to_facts": "Back to Timeline",
             "back_to_legal": "Back to Legal Arguments",
             "docs_contact_title": "Press Inquiries & Academic Exchange",
-            "docs_contact_text": "Journalists, researchers, and legal professionals may request access to the unredacted original documents and official records. Since GitHub does not support private messaging, please contact me directly using the email address listed in my GitHub profile."
+            "docs_contact_text": "Journalists, researchers, and legal professionals may request access to the unredacted original documents and official records. Since GitHub does not support private messaging, please contact me directly using the email address listed in my",
+            "docs_contact_link_text": "GitHub profile (henry1986)"
         }
     }
     

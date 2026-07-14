@@ -966,19 +966,21 @@
                     <h2>{{documents_title}}</h2>
                     <p style="color: var(--text-muted); margin-bottom: 1rem;">{{documents_desc}}</p>
                     
-                    {{documents_content}}
-                    
-                    <div class="alert alert-info" style="margin-top: 2.5rem; border-left-color: var(--primary); background: rgba(99, 102, 241, 0.03);">
+                    <div class="alert alert-info" style="margin-top: 1.5rem; margin-bottom: 2.5rem; border-left-color: var(--primary); background: rgba(99, 102, 241, 0.03);">
                         <div style="display: flex; gap: 1rem; align-items: flex-start;">
                             <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="color: var(--primary); flex-shrink: 0; margin-top: 0.1rem;">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
                             <div>
                                 <h4 style="margin: 0 0 0.5rem 0; color: #ffffff; font-size: 1.05rem;">{{docs_contact_title}}</h4>
-                                <p style="margin: 0; font-size: 0.95rem; line-height: 1.5; color: var(--text-muted);">{{docs_contact_text}}</p>
+                                <p style="margin: 0; font-size: 0.95rem; line-height: 1.5; color: var(--text-muted);">
+                                    {{docs_contact_text}} <a href="https://github.com/henry1986" target="_blank" style="color: #a5b4fc; text-decoration: underline; font-weight: 600;">{{docs_contact_link_text}}</a>.
+                                </p>
                             </div>
                         </div>
                     </div>
+                    
+                    {{documents_content}}
                 </div>
 
                 <div class="tab-navigation">
