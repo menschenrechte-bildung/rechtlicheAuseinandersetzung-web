@@ -60,8 +60,8 @@ As a direct consequence of this systemic vacuum, the applicant was trapped in an
 
     | Subject | Class 7b (2022/23)<br>Oberschule (Realschul-track) | Class 8b (2023/24)<br>Oberschule (Hauptschul-track) | Realschulabschluss (2026)<br>External State Exam | Development |
     | :--- | :---: | :---: | :---: | :--- |
-    | **German** | — | 5 | 4 | Passed on Realschul-level |
-    | **Mathematics** | 4 | — | 3 | Improved by 1 grade level |
+    | **German** | 4 | 5 | 4 | Recovery (Return to Realschul-level after collapse in Class 8) |
+    | **Mathematics** | 4 | 4 | 3 | Improved by 1 grade level compared to school |
     | **English** | 5 | 5 | 4 | Improved by 1 grade level |
     | **Social Studies / Law** | 5 | 6 | 1 | **Improvement of 5 grade levels** |
     | **Physics** | 4 | 5 | 2 | **Improvement of 3 grade levels** |

@@ -61,8 +61,8 @@ Als direkte Folge dieses systemischen Vakuums war der Beschwerdeführer in einer
 
     | Fach | Klasse 7b (2022/23)<br>Oberschule (Realschul-Bildungsgang) | Klasse 8b (2023/24)<br>Oberschule (Hauptschul-Bildungsgang) | Realschulabschluss (2026)<br>Schulfremdenprüfung | Entwicklung |
     | :--- | :---: | :---: | :---: | :--- |
-    | **Deutsch** | — | 5 | 4 | Auf Realschulniveau bestanden |
-    | **Mathematik** | 4 | — | 3 | Um 1 Notenstufe verbessert |
+    | **Deutsch** | 4 | 5 | 4 | Erholung (Rückkehr zum Realschulniveau nach Einbruch in Klasse 8) |
+    | **Mathematik** | 4 | 4 | 3 | Um 1 Notenstufe verbessert im Vergleich zur Schulzeit |
     | **Englisch** | 5 | 5 | 4 | Um 1 Notenstufe verbessert |
     | **Gemeinschaftskunde / Rechtserziehung** | 5 | 6 | 1 | **Verbesserung um 5 Notenstufen** |
     | **Physik** | 4 | 5 | 2 | **Verbesserung um 3 Notenstufen** |
