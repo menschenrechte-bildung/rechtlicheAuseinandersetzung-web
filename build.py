@@ -553,5 +553,10 @@ def build():
             
         print(f"Generated {filename} ({lang})")
 
+    # Automatisches Verschlüsseln der generierten HTML-Dateien
+    print("Running encryption step...")
+    os.system("node encrypt.js")
+
 if __name__ == "__main__":
     build()
+
