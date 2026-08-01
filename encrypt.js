@@ -18,6 +18,10 @@ const contactFormHtml = `
         <textarea name="message" rows="2" placeholder="Kurze Nachricht (optional)" style="background: var(--gray-800); border: 1px solid var(--gray-700); padding: 0.5rem 0.75rem; border-radius: 0.25rem; color: #fff; font-size: 0.875rem; outline: none; resize: vertical;"></textarea>
 
         <button type="submit" style="background: #6366f1; color: #fff; border: none; padding: 0.5rem; border-radius: 0.25rem; font-weight: 600; cursor: pointer; font-size: 0.875rem; margin-top: 0.25rem;">Passwort anfordern</button>
+        
+        <p style="font-size: 0.75rem; color: #71717a; margin-top: 0.5rem; line-height: 1.4;">
+            <strong>Datenschutzhinweis:</strong> Die eingegebenen Daten (Name, E-Mail) werden ausschließlich zur Bearbeitung und Beantwortung Ihrer Passwort-Anfrage genutzt. Eine Weitergabe an Dritte erfolgt nicht. Die Kommunikation wird im Rahmen üblicher E-Mail-Aufbewahrung gespeichert.
+        </p>
     </form>
 </div>
 `;
@@ -40,7 +44,7 @@ function encryptFile(file, password) {
     html = html.replace('</form></div>', `</form>${contactFormHtml}</div>`);
     
     fs.writeFileSync(file, html);
-    console.log(`✅ ${file} ist jetzt mit Passwort "${password}" und Kontaktformular geschützt.`);
+    console.log(`✅ ${file} ist jetzt mit Passwort "${password}", Kontaktformular und Datenschutzhinweis geschützt.`);
 }
 
 encryptFile('index.html', 'freiheit');
