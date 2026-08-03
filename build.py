@@ -250,6 +250,22 @@ def build():
     print("Parsing English statement...")
     en_data = parse_zusatzschrift("content/zusatzschrift_en.md")
     
+    # Load new biography content for DE
+    if os.path.exists("content/biografie_de.md"):
+        with open("content/biografie_de.md", "r", encoding="utf-8") as f:
+            de_data["introduction"] = md_to_html(f.read())
+            de_data["preliminary_remark"] = ""
+
+    if os.path.exists("content/gedanken_de.md"):
+        with open("content/gedanken_de.md", "r", encoding="utf-8") as f:
+            de_gedanken_html = md_to_html(f.read())
+            # Put gedanken in facts for now or as single block
+    
+    if os.path.exists("content/dokumente_de.md"):
+        with open("content/dokumente_de.md", "r", encoding="utf-8") as f:
+            de_docs_html = md_to_html(f.read())
+
+    
     # Load template
     with open("template.html", "r", encoding="utf-8") as f:
         template = f.read()
@@ -264,31 +280,31 @@ def build():
     # Set up translations dictionary
     translations = {
         "de": {
-            "meta_title": "EGMR-Beschwerde: Martin Heinrich ./. Deutschland",
-            "meta_desc": "Dokumentation der Menschenrechtsbeschwerde beim EGMR gegen den repressiven Schulzwang in Sachsen ohne Qualitätssicherung.",
-            "badge": "Menschenrechtsbeschwerde",
-            "title": "Staatlicher Schulzwang?",
-            "subtitle": "Nur mit gesetzlicher Qualitätskontrolle und kinderfreundlichen Rechtsbehelfen.",
-            "tab_overview": "Übersicht",
-            "tab_facts": "Chronologie",
-            "tab_legal": "Rechtliche Rügen",
-            "tab_documents": "Dokumente",
-            "introduction_title": "Einleitung und Zweck dieser Zusatzschrift",
+            "meta_title": "Schulweg außerhalb der Norm – Selbstbestimmte Bildung & EGMR-Beschwerde",
+            "meta_desc": "Eine persönliche Geschichte über die Grenzen des staatlichen Schulzwangs, den Erfolg durch Selbststudium und die juristische Beschwerde beim EGMR.",
+            "badge": "Bildungsgeschichte & Selbstbestimmung",
+            "title": "Schulweg außerhalb der Norm",
+            "subtitle": "Vom Leidensdruck im staatlichen System über den Erfolg im Selbststudium bis zur Beschwerde beim EGMR.",
+            "tab_overview": "📖 Unsere Geschichte",
+            "tab_facts": "💭 Gedanken & Blog",
+            "tab_legal": "⚖️ EGMR-Beschwerde",
+            "tab_documents": "📁 Dokumente & Beweise",
+            "introduction_title": "Unsere Geschichte (Etappen)",
             "preliminary_title": "Das Dreiecksverhältnis und das systemische Rechtsvakuum",
-            "timeline_title": "Chronologie der Ereignisse",
-            "timeline_desc": "Vom pädagogischen Missstand an der Schule über den erworbenen Abschluss im Selbststudium bis hin zur existenzbedrohenden Zwangsgeldandrohung.",
+            "timeline_title": "Gedanken & Systemkritik",
+            "timeline_desc": "Hier hinterfragen wir etablierte Grundsätze des Schulsystems im Vergleich zu den Grundrechten von Erwachsenen.",
             "legal_title": "Rechtliche Rügen unter der EMRK",
             "legal_desc": "Die Beschwerde richtet sich nicht gegen die Schulpflicht an sich, sondern gegen das Fehlen von konventionsrechtlichen Mindestgarantien bei der staatlichen Zwangsverbüßung.",
             "documents_title": "Verzeichnis der Dokumente und Transkripte",
             "documents_desc": "Transkriptionen aller relevanten Urkunden, Bescheide und Gerichtsentscheidungen im Volltext.",
-            "timeline_hint": "Klicke auf die Milestones, um die Details anzuzeigen:",
+            "timeline_hint": "Klicke auf die Beiträge, um sie zu lesen:",
             "conclusion_title": "Schluss: Eine neuartige Frage zur Konvention und Anträge",
-            "next_to_facts": "Weiter zur Chronologie",
-            "next_to_legal": "Weiter zur Begründung",
+            "next_to_facts": "Weiter zu Gedanken & Blog",
+            "next_to_legal": "Weiter zur EGMR-Beschwerde",
             "next_to_documents": "Weiter zu den Dokumenten",
-            "back_to_overview": "Zurück zur Übersicht",
-            "back_to_facts": "Zurück zur Chronologie",
-            "back_to_legal": "Zurück zur Begründung",
+            "back_to_overview": "Zurück zur Geschichte",
+            "back_to_facts": "Zurück zu Gedanken & Blog",
+            "back_to_legal": "Zurück zur EGMR-Beschwerde",
             "docs_contact_title": "Presseanfragen & Wissenschaftlicher Austausch",
             "docs_contact_text": "Journalisten, Wissenschaftler und juristische Fachkreise können hier eine Anfrage senden, um Zugang zu den ungeschwärzten Originalbelegen und Akten zu erhalten.",
             "form_label_name": "Name / Organisation",
@@ -298,44 +314,50 @@ def build():
             "form_sending_status": "Wird gesendet...",
             "form_success_message": "Vielen Dank! Ihre Anfrage wurde erfolgreich übermittelt.",
             "docs_top_notice_text": "Für Anfragen zum Zugang zu ungeschwärzten Originaldokumenten oder für wissenschaftlichen Austausch nutzen Sie bitte das",
-            "docs_top_notice_link": "Kontaktformular am Ende dieser Seite"
+            "docs_top_notice_link": "Kontaktformular am Ende dieser Seite",
+            "hero_quote_text": "„Erst glaubten wir an das System. Dann forderten wir Gesetz und Lernfreude ein. Als der Staat mit Verweigerung reagierte, übernahmen wir selbst die Verantwortung – und machten den Weg frei für ein Leben in Selbstbestimmung: mit den besten Noten, die unser Sohn je hatte, und vor allem mit einem Kind, das wieder glücklich war.“",
+            "hero_btn_story": "📖 Die ganze Story lesen",
+            "hero_btn_docs": "📁 Beweise & Dokumente"
         },
         "en": {
-            "meta_title": "ECHR Application: Martin Heinrich v. Germany",
-            "meta_desc": "Documentation of the human rights complaint to the ECHR challenging compulsory school attendance in Saxony without quality assurance.",
-            "badge": "ECHR Application",
-            "title": "State School Coercion?",
-            "subtitle": "Only with quality control and child-friendly remedies.",
-            "tab_overview": "Overview",
-            "tab_facts": "Timeline",
-            "tab_legal": "Legal Violations",
-            "tab_documents": "Documents",
-            "introduction_title": "Introduction and Purpose of this Statement",
+            "meta_title": "A Journey Beyond Standard Schooling – Self-Study & ECHR Application",
+            "meta_desc": "A personal journey highlighting the limits of compulsory schooling, success through self-study, and the human rights complaint to the ECHR.",
+            "badge": "Educational Journey & Autonomy",
+            "title": "A Journey Beyond Standard Schooling",
+            "subtitle": "From systemic pressure in public school to success in self-directed learning and our ECHR application.",
+            "tab_overview": "📖 Our Story",
+            "tab_facts": "💭 Reflections & Blog",
+            "tab_legal": "⚖️ ECHR Application",
+            "tab_documents": "📁 Documents & Evidence",
+            "introduction_title": "Our Story (Milestones)",
             "preliminary_title": "The Tripartite Relationship and the Systemic Rights Vacuum",
-            "timeline_title": "Timeline of Events",
-            "timeline_desc": "From pedagogical abuse in public school to self-study graduation in regular time, and ongoing coercive prosecution.",
+            "timeline_title": "Reflections & Systemic Critique",
+            "timeline_desc": "Questioning core assumptions of compulsory schooling compared to adult rights.",
             "legal_title": "Legal Arguments under the Convention",
             "legal_desc": "The complaints do not challenge compulsory schooling as such, but rather the lack of minimum safeguards when enforced through State coercion.",
             "documents_title": "Index of Documents and Transcripts",
             "documents_desc": "Full-text transcripts of all relevant decisions, notices, and court records.",
-            "timeline_hint": "Click on the milestones to view the details:",
+            "timeline_hint": "Click on articles to read:",
             "conclusion_title": "Conclusion: A Novel Convention Question and Relief Sought",
-            "next_to_facts": "Next to Timeline",
-            "next_to_legal": "Next to Legal Arguments",
+            "next_to_facts": "Next to Reflections & Blog",
+            "next_to_legal": "Next to ECHR Application",
             "next_to_documents": "Next to Documents",
-            "back_to_overview": "Back to Overview",
-            "back_to_facts": "Back to Timeline",
-            "back_to_legal": "Back to Legal Arguments",
-            "docs_contact_title": "Press Inquiries & Academic Exchange",
-            "docs_contact_text": "Journalists, researchers, and legal professionals may submit a request here to obtain access to the unredacted original documents and official records.",
-            "form_label_name": "Name / Organization",
+            "back_to_overview": "Back to Story",
+            "back_to_facts": "Back to Reflections",
+            "back_to_legal": "Back to ECHR Application",
+            "docs_contact_title": "Press Enquiries & Academic Exchange",
+            "docs_contact_text": "Journalists, legal scholars, and researchers may request access to unredacted original case files here.",
+            "form_label_name": "Name / Organisation",
             "form_label_email": "Email Address",
             "form_label_message": "Your Message",
-            "form_btn_send": "Send Request",
+            "form_btn_send": "Send Enquiry",
             "form_sending_status": "Sending...",
-            "form_success_message": "Thank you! Your request has been successfully submitted.",
-            "docs_top_notice_text": "For inquiries regarding access to unredacted original documents or academic exchange, please use the",
-            "docs_top_notice_link": "contact form at the bottom of this page"
+            "form_success_message": "Thank you! Your enquiry has been submitted successfully.",
+            "docs_top_notice_text": "For access to unredacted original case files or academic exchange, please use the",
+            "docs_top_notice_link": "contact form at the bottom of this page",
+            "hero_quote_text": "“At first, we believed in the system. Then we demanded compliance with the law and the preservation of learning joy. When the State responded with refusal, we took responsibility into our own hands – paving the way for a life of self-determination: with the best grades our son ever had, and above all, with a child who was happy again.”",
+            "hero_btn_story": "📖 Read Our Story",
+            "hero_btn_docs": "📁 Evidence & Documents"
         }
     }
     
@@ -535,7 +557,10 @@ def build():
         output = output.replace("{{legal_arguments_html}}", legal_arguments_html)
         
         # Documents Inject
-        output = output.replace("{{documents_content}}", documents_de if lang == "de" else documents_en)
+        if lang == "de" and 'de_docs_html' in locals():
+            output = output.replace("{{documents_content}}", de_docs_html)
+        else:
+            output = output.replace("{{documents_content}}", documents_de if lang == "de" else documents_en)
         
         # Replace basic translation keys
         for key, val in lang_trans.items():
@@ -545,6 +570,7 @@ def build():
         output = output.replace("{{introduction_content}}", data["introduction"])
         output = output.replace("{{preliminary_remark_content}}", data["preliminary_remark"])
         output = output.replace("{{conclusion_content}}", data.get("conclusion", ""))
+
         
         # Write file
         filename = "index.html" if lang == "de" else f"index_{lang}.html"
@@ -554,9 +580,14 @@ def build():
         print(f"Generated {filename} ({lang})")
 
     # Automatisches Verschlüsseln der generierten HTML-Dateien
-    print("Running encryption step...")
-    os.system("node encrypt.js")
+    ENABLE_ENCRYPTION = True
+    if ENABLE_ENCRYPTION:
+        print("Running encryption step...")
+        os.system("node encrypt.js")
+    else:
+        print("Encryption step skipped (ENABLE_ENCRYPTION = False).")
 
 if __name__ == "__main__":
     build()
+
 
