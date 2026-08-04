@@ -1,7 +1,7 @@
-# SCHULWEG AUSSERHALB DER NORM: DIE ERFOLGSGESCHICHTE EINER SELBSTBEHAUPTUNG
+# VERANTWORTUNG FÜR BILDUNG ÜBERNEHMEN
 
 > **Kurz-Kontext für Erstbesucher:**  
-> Dies ist keine Geschichte des Passivseins, sondern der Beweis für die Kraft autonomer Bildung und Zivilcourage. Nachdem eine staatliche Schulleitung offen gegen den gesetzlichen Bildungsauftrag (§ 1 SächsSchulG – Erhaltung der Lernfreude) verstieß und das Kultusministerium dies deckte, übernahmen wir selbst die Verantwortung. Das Ergebnis: Der erfolgreiche Realschulabschluss im Selbststudium mit einer deutlichen Leistungssteigerung gegenüber seiner bisherigen Schulzeit, die Wiedererlangung seiner Lernfreude und der Mut, staatliche Rechtsverstöße bis vor den Europäischen Gerichtshof für Menschenrechte (EGMR) zu tragen.
+> Nachdem staatliche Stellen offen gegen den gesetzlichen Bildungsauftrag (§ 1 SächsSchulG – Erhaltung der Lernfreude) und verfassungsrechtliche Grundlagen verstießen, habe ich die Verantwortung für die Bildung meines Sohnes selbst übernommen. Das Ergebnis: Ein erfolgreicher Realschulabschluss im Selbststudium mit den besten Noten seiner Schulzeit und die Wiedererlangung seiner Lernfreude.
 
 ---
 
@@ -11,7 +11,7 @@ Wer in Deutschland an das Schulsystem glaubt, vertraut darauf, dass Gesetze eing
 
 Als wir feststellen mussten, dass die Schulleitung diesen Auftrag nicht nur ignorierte, sondern auf das Einfordern von Lernfreude mit Aggression und Anschreien reagierte, suchten wir Hilfe beim Staat. Doch die Ernüchterung folgte schnell: Weder Schulaufsicht noch Kultusministerium griffen ein. Die Recherche enthüllte das eigentliche Ausmaß: **Seit 2015 hat der Freistaat Sachsen jegliche externe Qualitätskontrolle an Schulen ausgesetzt.** Das Fehlverhalten war kein Ausrutscher einer Schulleitung, sondern ein vom System gedeckter Rechtsbruch.
 
-In diesem Moment trafen wir die Entscheidung zur Autonomie: Wir überließen die Bildung unseres Sohnes nicht einem kontrolllosen System, sondern nahmen sie in die eigene Hand.
+In diesem Moment trafen wir die Entscheidung zur Autonomie: Wir überließen die Bildung meines Sohnes nicht einem kontrolllosen System, sondern nahmen sie in die eigene Hand.
 
 ---
 
