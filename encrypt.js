@@ -34,8 +34,10 @@ function encryptFile(file, password) {
     // Nachbearbeiten: Groß-/Kleinschreibung beim Passwort ignorieren & Kontaktformular auf Sperrbildschirm einfügen
     let html = fs.readFileSync(file, 'utf8');
     
-    // Case-insensitive Passwortprüfung
-    html = html.replace(/s\.value/g, 's.value.toLowerCase()');
+    // Case-insensitive Passwortprüfung & Normalisierung (sowohl "freiheit" als auch "freedom" erlauben)
+    const pwdNorm = `(s.value.toLowerCase()==="freedom"?"freiheit":s.value.toLowerCase())`;
+    html = html.replace(',s.value)', `,${pwdNorm})`)
+               .replace('sessionStorage.k||s.value?', 'sessionStorage.k||s.value?');
     
     // Box im CSS vergrößern, damit das Kontaktformular hineinpasst
     html = html.replace(/height:170px/g, 'height:auto;min-height:170px');
