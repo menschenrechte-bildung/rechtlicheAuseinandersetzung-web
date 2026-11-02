@@ -364,6 +364,14 @@ def build():
     # Document directory entries (DE and EN lists)
     documents_de = """
     <div class="docs-list">
+        <div class="doc-item-card" style="border: 2px solid #6366f1; background: rgba(99, 102, 241, 0.08);">
+            <span class="doc-category" style="background: #6366f1; color: #fff;">Presse- & Belegdossier</span>
+            <h4>🔒 Originalbelege (Amtliche Scans & Akten)</h4>
+            <p>Dossier mit allen ungeschwärzten Original-Scans (Gymnasium &amp; Oberschule, Realschulabschlusszeugnis 2026, SMK-Bescheid &amp; Widerspruch, Gesprächsprotokolle BSZ &amp; Stadt Dresden). Passwortgeschützt mit AES-256.</p>
+            <div class="doc-actions">
+                <a href="Belege_Abschluss_Qualitaet_Heinrich_2026.pdf" download="Belege_Abschluss_Qualitaet_Heinrich_2026.pdf" class="doc-btn" style="background: #6366f1; color: #fff;">PDF Herunterladen (4,9 MB)</a>
+            </div>
+        </div>
         <div class="doc-item-card">
             <span class="doc-category">Hauptschriften</span>
             <h4>Zusatzschrift (Teil B) – Deutsch</h4>
@@ -435,6 +443,14 @@ def build():
     
     documents_en = """
     <div class="docs-list">
+        <div class="doc-item-card" style="border: 2px solid #6366f1; background: rgba(99, 102, 241, 0.08);">
+            <span class="doc-category" style="background: #6366f1; color: #fff;">Press & Evidence Dossier</span>
+            <h4>🔒 Official Proof Documents (Scans & Files)</h4>
+            <p>Dossier containing unredacted original scans (Gymnasium &amp; Secondary School, 2026 Graduation Certificate, Ministry Decision &amp; Objection, Official Phone Logs). Password-protected with AES-256.</p>
+            <div class="doc-actions">
+                <a href="Belege_Abschluss_Qualitaet_Heinrich_2026.pdf" download="Belege_Abschluss_Qualitaet_Heinrich_2026.pdf" class="doc-btn" style="background: #6366f1; color: #fff;">Download PDF (4.9 MB)</a>
+            </div>
+        </div>
         <div class="doc-item-card">
             <span class="doc-category">Main Statements</span>
             <h4>Additional Statement (Part B) – English</h4>
